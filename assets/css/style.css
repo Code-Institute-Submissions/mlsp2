@@ -31,3 +31,76 @@ body {
 }
 
 /* ----------------------------------------------- Navigation End --- */
+
+/* ----------------------------------------------- Home Page Start --- */
+.home-img {
+  height: 100vh;
+  background: url(../images/home.jpg) no-repeat bottom right fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.caption {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 38%;
+  z-index: 1;
+  color: white;
+  text-transform: uppercase;
+}
+
+.caption h1 {
+  font-size: 50px;
+  font-weight: 500;
+  display: block;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 10px;
+  text-align: center !important;
+}
+
+hr {
+  width: 60%;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+.caption h3 {
+  font-size: 25px;
+  font-family: "Gotu", sans-serif;
+  font-weight: 300;
+  text-align: center !important;
+  padding-top: 10px;
+  margin-bottom: 60px;
+}
+
+.btn-lg {
+  font-weight: bold;
+  border-radius: 23px;
+  width: 160px;
+}
+
+.btn-light {
+  color: white;
+  background-color: #008B8B;
+  border-color: #008B8B;
+}
+
+.btn:hover {
+  background-color:white;
+  color: #008B8B;
+  border: 1px solid white;
+}
+/* ----------------------------------------------- Home Page End --- */
