@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700|family=Gotu:100,200,300,400,500,600,700|Montserrat:100,200,300,400,500,600,700');
+
+body {
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
+  color: white;
+}
+
+/* ----------------------------------------------- Navigation Start --- */
+
+.navbar{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2px;
+  background-color: rgba(255, 255, 255, .4)!important
+}
+
+.navbar-nav li{
+  padding-right: 11px;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+  color: white;
+  padding-top: 12px;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+  color: #008080;
+}
+
+/* ----------------------------------------------- Navigation End --- */
