@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700|family=Gotu:100,200,300,400,500,600,700|Montserrat:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700|family=Gotu:100,200,300,400,500,600,700|family=Montserrat:100,200,300,400,500,600,700|family=Gochi Hand:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 body {
   overflow-x: hidden;
@@ -19,14 +20,16 @@ body {
 }
 
 .navbar-brand{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
+    font-family: "Gochi Hand", cursive;
+    font-weight: 600;
     font-size: 14px;
     margin-right: 0px;
+    color: #ffa083;
 }
 
-.fa-hiking{
+.fa-globe-americas{
     margin-right: 5px;
+    font-size: 20px;
 }
 
 .navbar-nav li{
@@ -39,19 +42,10 @@ body {
 }
 
 
-/*.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover{
-    border-bottom: 1px solid;
- 
-}*/
-
-.navbar-dark .nav-link.active:hover{
-    
-     color: #ffa083;
+    color: #ffa083;
 }
-
-
-
 
 /* ----------------------------------------------- Navigation End --- */
 
@@ -72,21 +66,22 @@ body {
 
 .caption {
   width: 100%;
-  max-width: 100%;
-  position: absolute;
-  top: 38%;
-  z-index: 1;
-  color: white;
-  text-transform: uppercase;
+    position: absolute;
+    top: 25%;
+    z-index: 1;
+    color: white;
+    text-transform: uppercase;
 }
 
 .caption h1 {
-  font-size: 50px;
-  font-weight: 500;
-  display: block;
-  font-family: "Lato", sans-serif;
-  margin-bottom: 10px;
-  text-align: center !important;
+    font-size: 70px;
+    font-weight: 700;
+    display: block;
+    font-family: "Varela Round", sans-serif;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-left: 60px;
+    width: 60%;
 }
 
 hr {
@@ -94,19 +89,20 @@ hr {
   display: block;
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: left;
+  margin-left: 60px;
   border-style: inset;
   border-width: 1px;
 }
 
 .caption h3 {
-  font-size: 25px;
-  font-family: "Gotu", sans-serif;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
   font-weight: 300;
-  text-align: center !important;
+  text-align: left;
   padding-top: 10px;
   margin-bottom: 60px;
+  margin-left: 60px;
 }
 
 .btn-lg {
@@ -127,3 +123,46 @@ hr {
   border: 1px solid white;
 }
 /* ----------------------------------------------- Home Page End --- */
+
+
+/* -----------------------------------------------Media Queries --- */
+
+/*small screens (up to 576px)*/
+@media (max-width:576px){
+    .caption h1{
+        font-size: 35px;
+        width: 70%;
+        margin-left: 25px;
+    }
+    
+    hr{
+        margin-left: 25px;
+    }
+
+    .caption h3 {
+    font-size: 13px;
+    max-width: 70%;
+    margin-left: 25px;
+    }
+}
+
+/*medium devices (up to 767px)*/
+@media (max-width:767px){
+    .caption h1{
+        font-size: 40px;
+        width: 80%;
+        margin-left: 25px;
+    }
+
+    hr{
+        width: 80%;
+        margin-left: 25px;
+       
+    }
+
+    .caption h3{
+        font-size: 16px;
+        max-width: 75%;
+        margin-left: 25px;
+    }
+}
