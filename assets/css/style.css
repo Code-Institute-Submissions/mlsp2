@@ -179,8 +179,6 @@ hr {
 /* ----------------------------------------------- Home Page End --- */
 
 /* ----------------------------------------------- About Page Start --- */
-
-/* ----------------------------------------------- About Page Start --- */
 .about-img {
   height: 100vh;
   background: url(../images/about.jpg) no-repeat bottom right fixed;
@@ -252,6 +250,26 @@ h2 {
     margin-top: 20%;
     padding-top: 10px;
 }
+
+/* ----------------------------------------------- About Page End --- */
+
+/* ----------------------------------------------- Pacakge Page Start --- */
+.packages-img {
+  height: 100vh;
+  background: url(../images/packages.jpg) no-repeat bottom right fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+
+/* ----------------------------------------------- Package Page End --- */
 
 /* -----------------------------------------------Media Queries --- */
 
