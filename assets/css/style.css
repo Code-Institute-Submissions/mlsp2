@@ -287,6 +287,37 @@ h2 {
   display: table;
 }
 
+.small-circle{
+    width: 70px;
+    height: 70px;
+    float: left;
+    border-style: solid;
+    background-color: #ffa083;
+    border-width: 4px;
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    z-index: 10;
+    border-color: #ffa083;
+}
+
+.off{
+    width: 30px;
+    height: 25px;
+}
+
+.off a{
+    text-transform: capitalize;
+    font-size: 20px;
+    font-family: "Varela Round",sans-serif;
+    margin-left: 5px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
 .left{
     width: 300px;
     height: 300px;
@@ -312,6 +343,10 @@ h2 {
     padding-bottom: 5px;
     margin-top: 15px;
     font-family: "Varela Round", sans-serif;
+}
+
+.text-center a{
+    text-decoration: none;
 }
 
 .description{
