@@ -453,7 +453,14 @@ h4{
     width: 60%;
 }
 
-
+.features-container{
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    z-index: 1;
+    color: white;
+    text-transform: uppercase;
+}
 
 /* ----------------------------------------------- Package Page End --- */
 
