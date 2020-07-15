@@ -438,7 +438,7 @@ h2 {
 .features{
     width: 100%;
     position: absolute;
-    top: 15%;
+    top: 10%;
     left: 0;
     z-index: 1;
     color: white;
@@ -456,10 +456,63 @@ h4{
 .features-container{
     width: 100%;
     position: absolute;
-    top: 25%;
     z-index: 1;
     color: white;
     text-transform: uppercase;
+}
+
+.b-left {
+    width: 200px;
+    height: 150px;
+    float: left;
+    border-style: solid;
+    background-color: white;
+    border-width: 1px;
+    border-radius: 10%;
+    padding: 5px;
+}
+
+.beach1{
+    background: url(../images/beach1.jpg) no-repeat center;
+    height: 100%;
+    border-radius: 5%;
+    background-size: 200px;
+}
+
+.b-middle{
+    width: 200px;
+    height: 150px;
+    margin: 0 auto;
+    border-style: solid;
+    background-color: white;
+    border-width: 1px;
+    border-radius: 10%;
+    padding: 5px;
+}
+
+.beach2{
+    background: url(../images/beach2.jpg) no-repeat center;
+    height: 100%;
+    border-radius: 5%;
+    background-size: 300px;
+}
+
+.b-right {
+    width: 200px;
+    height: 150px;
+    float: right;
+    border-style: solid;
+    background-color: white;
+    border-width: 1px;
+    border-radius: 10%;
+    padding: 5px;
+}
+
+.beach3{
+    background: url(../images/beach3.jpg) no-repeat bottom right;
+    height: 100%;
+    border-radius: 5%;
+    background-size: 300px;
 }
 
 /* ----------------------------------------------- Package Page End --- */
