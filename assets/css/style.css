@@ -482,6 +482,80 @@ h2 {
     .caption-about .btn{
         margin-top: 80%;
     }
+
+    .packages-img{
+        height: 130vh;
+    }
+
+    .circle-container{
+        top: 20%;
+    }
+
+    .left{
+        width: 150px;
+        height: 150px;
+        float: none;
+        margin: 0 auto;
+    }
+
+    .beach{
+        background: url(../images/beach.jpg) no-repeat center;
+        background-size: 300px;
+    }
+
+    .small-circle-left{
+        top: 20%;
+        left: 60%;
+    }
+
+    .heading-services{
+        font-size: 17px;
+    }
+
+    .description{
+        display: none;
+    }
+
+    .container-right{
+        top: 89%;
+    }
+
+    .right{
+        width: 150px;
+        height: 150px;
+        float: none;
+        margin: 0 auto;
+    }
+
+    .mountain{
+        background: url(../images/hiking.jpg) no-repeat center;
+        background-size: 300px;
+    }
+
+    .small-circle-right{
+        top: 89%;
+        left: 60%;
+    }
+
+    .container-middle{
+        top: 55%;
+    }
+
+    .middle{
+        width: 150px;
+        height: 150px;
+        float: none;
+    }
+
+    .forest{
+        background: url(../images/forest.jpg) no-repeat center bottom;
+        background-size: 150px;
+    }
+
+    .small-circle-middle{
+        top: 55%;
+        left: 60%;
+    }
 }
 
 /*medium devices (up to 767px)*/
