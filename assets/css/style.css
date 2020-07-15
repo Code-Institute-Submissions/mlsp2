@@ -421,6 +421,40 @@ h2 {
     background-size: 300px;
 }
 
+.packages-img {
+    height: 100vh;
+    background: url(../images/packages.jpg) no-repeat bottom right fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.features{
+    width: 100%;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    z-index: 1;
+    color: white;
+    text-transform: uppercase;
+}
+
+h4{
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-left: 60px;
+    width: 60%;
+}
+
+
+
 /* ----------------------------------------------- Package Page End --- */
 
 /* -----------------------------------------------Media Queries --- */
