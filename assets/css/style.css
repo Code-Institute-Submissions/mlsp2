@@ -374,6 +374,51 @@ button:focus{
   justify-content: center;
   position: relative;
 }
+
+.center-form {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 70%;
+}
+
+.box{
+    background-color: rgba(255, 255, 255, .9);
+    height: 400px;
+    width: 36%;
+    position: absolute;
+    right: 0px;
+    margin-right: 60px;
+    bottom: 5%;
+    font-size: 30px;
+    font-weight: 700;
+    display: block;
+    font-family: "Varela Round", sans-serif;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: .25rem;
+}
+
+#fullname{
+    margin-top: 70px;
+}
+
+.form-control {
+    display: inline-block;
+    max-width: 90%;
+    color:  white;
+    background-clip: padding-box;
+    border: 1px solid  #ffa083;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+div .button{
+    margin-top: 70px;
+}
+
+div .button .btn-light:hover{
+    border: 1px solid  #ffa083;
+}
 /* -----------------------------------------------Media Queries --- */
 
 /*small screens (up to 576px)*/
