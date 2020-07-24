@@ -441,7 +441,7 @@ div .button .btn-light:hover{
 }
 
 .modal{
-    background-color: white;
+    background-color: #ffa083;
     width: 40%;
     height: 30%;
     top: 40%;
@@ -451,7 +451,9 @@ div .button .btn-light:hover{
     text-align: center;
     flex-direction: column;
     font-family: "Varela Round", sans-serif;
-    color: black;
+    color: white;
+    border-radius: .25rem;
+    border: 3px solid white;
 }
 
 .modal-close{
