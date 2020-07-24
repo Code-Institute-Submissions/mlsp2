@@ -356,8 +356,24 @@ button:focus{
   display: table;
 }
 
-/* ----------------------------------------------- Package Page End --- */
+/* ----------------------------------------------- Explore Page End --- */
 
+/* ----------------------------------------------- Contact Page Start --- */
+
+/* ----------------------------------------------- Contact Page End --- */
+.contact-img {
+  height: 100vh;
+  background: url(../images/contact1.jpg) no-repeat bottom right fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
 /* -----------------------------------------------Media Queries --- */
 
 /*small screens (up to 576px)*/
