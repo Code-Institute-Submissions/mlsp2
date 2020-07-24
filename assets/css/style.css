@@ -358,9 +358,26 @@ button:focus{
 
 /* ----------------------------------------------- Explore Page End --- */
 
+/* ----------------------------------------------- Gallery Page Start --- */
+.gallery-img {
+  height: 100vh;
+  background: url(../images/gallery.jpg) no-repeat bottom right fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* ----------------------------------------------- Gallery Page End --- */
+
 /* ----------------------------------------------- Contact Page Start --- */
 
-/* ----------------------------------------------- Contact Page End --- */
+
 .contact-img {
   height: 100vh;
   background: url(../images/contact1.jpg) no-repeat bottom right fixed;
@@ -463,6 +480,8 @@ div .button .btn-light:hover{
     font-weight: bold;
     cursor: pointer;
 }
+/* ----------------------------------------------- Contact Page End --- */
+
 /* -----------------------------------------------Media Queries --- */
 
 /*small screens (up to 576px)*/
