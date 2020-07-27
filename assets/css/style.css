@@ -140,6 +140,7 @@ hr {
     margin-right: 60px;
     top: 29%;
     font-size: 20px;
+    z-index: 1;
     }
 
 .social-links a{
