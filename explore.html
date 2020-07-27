@@ -54,32 +54,25 @@
 		<!--End Navigation-->
 
         <!-- Start Landing Page Section -->
-        <div class="landing">
-            <div class="home-wrap">
-                <div class="explore-img"></div>
-            </div>
-        </div>
-		<!-- End Landing Page Section -->
+            <div class="explore-img">
+                <!-- Start Map Nav Section -->
+                    <div class="map-button-container">
+                        <button class="map-button" onclick="myRestaurantLocation(); myRestaurants()">restaurants</button>
+                        <button class="map-button" onclick="myCoffeeLocation(); myCoffee()">coffeeshops</button>
+                        <button class="map-button" onclick="myAccomodationLocation(); myAccomodation()">accomodation</button>
+                        <button class="map-button" onclick="myActivitiesLocation(); myActivities()">activities</button>
+                        <button class="map-button" onclick="myParksLocation(); myParks()">parks</button>
+                        <button class="map-button" onclick="myBarsLocation(); myBars()">bars</button>
+                    </div>
+                <!-- End Map Nav Section -->
 
-        <!-- Start Map Nav Section -->
-         <div class="map-button-container">
-            <button class="map-button" onclick="myRestaurantLocation(); myRestaurants()">restaurants</button>
-            <button class="map-button" onclick="myCoffeeLocation(); myCoffee()">coffeeshops</button>
-            <button class="map-button" onclick="myAccomodationLocation(); myAccomodation()">accomodation</button>
-            <button class="map-button" onclick="myActivitiesLocation(); myActivities()">activities</button>
-            <button class="map-button" onclick="myParksLocation(); myParks()">parks</button>
-            <button class="map-button" onclick="myBarsLocation(); myBars()">bars</button>
-         </div>
-        <!-- End Map Nav Section -->
-
-        <!-- Start Map Section -->
-            <div class="map-container">
-                <div class="container">
-                    <div id="map" class="map"></div>
-                    <div id="demo" class="right"></div>
-                </div>
+                <!-- Start Map Section -->
+                    <div class="map-container">
+                        <div id="map" class="map"></div>
+                    </div>
+                <!-- End Map Section -->
             </div>
-        <!-- End Map Section -->
+		<!-- End Landing Page Section -->     
 	</div>
     <!--End Explore Seccion-->
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>

@@ -258,7 +258,7 @@ h2 {
 /* ----------------------------------------------- Explore Page Start --- */
 .explore-img {
   height: 100vh;
-  background: url(../images/explore.jpg) no-repeat bottom right fixed;
+  background: bisque;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -270,35 +270,15 @@ h2 {
   position: relative;
 }
 
-.container{
-    max-width: 100%;
-}
-
 #map{
-    width: 1000px;
-    height: 500px;
-    float: left;
-    border: 3px solid white;
-}
-
-.right{
-    width: 300px;
-    height: 500px;
-    float: right;
-    background-color: white;
-    border-width: 1px;
-    padding: 20px;
-    padding-left: 30px;
-}
-
-div #demo{
-    color: #ffa083;
+    width: 100%;
+    height: 80vh;
 }
 
 .map-container{
     width: 100%;
     position: absolute;
-    top: 25%;
+    top: 20%;
     z-index: 1;
     text-transform: uppercase;
 }
