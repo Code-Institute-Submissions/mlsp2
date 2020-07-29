@@ -24,7 +24,7 @@ $("#submit").click(function(){
             icon: "warning",
             button: "Ok, thank you",
         });  
-    }else{
+    } else{
         swal({
             title: "Good job!",
             text: "You're subscriptions has been registered",
@@ -32,4 +32,18 @@ $("#submit").click(function(){
             button: "Awesome!",
         });
     };
+});
+
+$("#submit").click(function(){
+    var email = $("#emailaddress").val();
+    var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+    if(email.match(pattern)){
+        swal({
+            title: "Good job!",
+            text: "You're subscriptions has been registered",
+            icon: "success",
+            button: "Awesome!",
+        });
+    }
 });
