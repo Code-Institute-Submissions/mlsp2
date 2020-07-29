@@ -430,7 +430,7 @@ img{
 .form-control {
     display: inline-block;
     max-width: 90%;
-    color:  white;
+    color:  #495057;
     background-clip: padding-box;
     border: 1px solid  #ffa083;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
