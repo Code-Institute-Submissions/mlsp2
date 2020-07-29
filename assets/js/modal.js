@@ -11,7 +11,8 @@ var modalClose = document.querySelector('.modal-close');
             modalClose.addEventListener('click',function(){
                 modalBg.classList.remove('bg-active');
             })*/
-         
+
+// Form Validation
 
 $("#submit").click(function(){
     var name = $("#fullname").val();
@@ -33,6 +34,8 @@ $("#submit").click(function(){
         });
     };
 });
+
+// Email Validation
 
 $("#submit").click(function(){
     var email = $("#emailaddress").val();
