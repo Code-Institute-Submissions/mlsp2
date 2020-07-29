@@ -17,15 +17,17 @@ var modalClose = document.querySelector('.modal-close');
 $("#submit").click(function(){
     var name = $("#fullname").val();
     var email = $("#emailaddress").val();
+    var pattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
-    if(name == '' || email == ''){
+    if(name == '' || email == '' || email !== pattern){
         swal({
             title: "Empty Fields!",
             text: "Please check the missing fields",
             icon: "warning",
             button: "Ok, thank you",
         });  
-    } else{
+    }
+    else{
         swal({
             title: "Good job!",
             text: "You're subscriptions has been registered",
@@ -35,18 +37,16 @@ $("#submit").click(function(){
     };
 });
 
-// Email Validation
-
 $("#submit").click(function(){
     var email = $("#emailaddress").val();
-    var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    var pattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
-    if(email.match(pattern)){
-        swal({
-            title: "Good job!",
-            text: "You're subscriptions has been registered",
-            icon: "success",
-            button: "Awesome!",
-        });
+    if(email.value.match(pattern)){
+            swal({
+                title: "BBBBBB Email",
+                text: "Please write a valid email",
+                icon: "warning",
+                button: "Ok, thank you",
+            });
     }
 });
