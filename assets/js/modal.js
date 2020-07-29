@@ -17,9 +17,10 @@ var modalClose = document.querySelector('.modal-close');
 $("#submit").click(function(){
     var name = $("#fullname").val();
     var email = $("#emailaddress").val();
-    var pattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-
-    if(name == '' || email == '' || email !== pattern){
+   
+    
+   
+    if(name == '' || email == ''){
         swal({
             title: "Empty Fields!",
             text: "Please check the missing fields",
@@ -37,16 +38,3 @@ $("#submit").click(function(){
     };
 });
 
-$("#submit").click(function(){
-    var email = $("#emailaddress").val();
-    var pattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-
-    if(email.value.match(pattern)){
-            swal({
-                title: "BBBBBB Email",
-                text: "Please write a valid email",
-                icon: "warning",
-                button: "Ok, thank you",
-            });
-    }
-});
