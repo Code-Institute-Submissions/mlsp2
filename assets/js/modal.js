@@ -18,8 +18,6 @@ $("#submit").click(function(){
     var name = $("#fullname").val();
     var email = $("#emailaddress").val();
    
-    
-   
     if(name == '' || email == ''){
         swal({
             title: "Empty Fields!",
@@ -27,6 +25,14 @@ $("#submit").click(function(){
             icon: "warning",
             button: "Ok, thank you",
         });  
+    }
+    if(email !== /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/){
+        swal({
+            title: "Invalid Email!",
+            text: "Please write a valid email address",
+            icon: "warning",
+            button: "Ok, thank you",
+        }); 
     }
     else{
         swal({
