@@ -1,20 +1,3 @@
-/*var emailPattern = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-
-$("#submit").click(function(event) {
-  event.preventDefault();
-  var name = $("#fullname").val();
-  var email = $("#emailaddress").val();
-
-  if (name == '' || email == '') {
-    console.log("Empty fields error");
-  } else if (!emailPattern.test(email)) {
-    console.log("Email pattern error");
-  } else {
-    console.log("Success");
-    $('#testForm').submit(); // Here submit the form
-  };
-});*/
-
 // Form Validation
 
 $("#submit").click(function(){
@@ -47,5 +30,6 @@ $("#submit").click(function(){
             button: "Awesome!",
         });
         $('#testForm').submit();
+        
     };
 });
