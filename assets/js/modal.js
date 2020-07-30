@@ -1,22 +1,26 @@
-/*var modalButton = document.querySelector('.modal-button');
-var modalBg = document.querySelector('.modal-bg');
-var modalClose = document.querySelector('.modal-close');
+/*var emailPattern = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
 
+$("#submit").click(function(event) {
+  event.preventDefault();
+  var name = $("#fullname").val();
+  var email = $("#emailaddress").val();
 
-
-
-            modalButton.addEventListener('click',function(){
-                modalBg.classList.add('bg-active');
-            });
-            modalClose.addEventListener('click',function(){
-                modalBg.classList.remove('bg-active');
-            })*/
+  if (name == '' || email == '') {
+    console.log("Empty fields error");
+  } else if (!emailPattern.test(email)) {
+    console.log("Email pattern error");
+  } else {
+    console.log("Success");
+    $('#testForm').submit(); // Here submit the form
+  };
+});*/
 
 // Form Validation
 
 $("#submit").click(function(){
     var name = $("#fullname").val();
     var email = $("#emailaddress").val();
+    var emailPattern = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
    
     if(name == '' || email == ''){
         swal({
@@ -26,13 +30,14 @@ $("#submit").click(function(){
             button: "Ok, thank you",
         });  
     }
-    if(email !== /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/){
+    else if(!emailPattern.test(email)){
         swal({
             title: "Invalid Email!",
             text: "Please write a valid email address",
             icon: "warning",
             button: "Ok, thank you",
         }); 
+        event.preventDefault();
     }
     else{
         swal({
@@ -41,6 +46,6 @@ $("#submit").click(function(){
             icon: "success",
             button: "Awesome!",
         });
+        $('#testForm').submit();
     };
 });
-
