@@ -29,6 +29,11 @@ $("#submit").click(function(){
             icon: "success",
             button: "Awesome!",
         });
+
+         window.setTimeout(() => {
+            document.createElement('form').submit.call(document.forms['testform'])
+            }, 2500);
+            
         $('#testForm').submit();
         
     };
