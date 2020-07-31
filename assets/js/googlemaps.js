@@ -1,8 +1,26 @@
 //oslo map
 
+// Initialize and add the map
 function initMap() {
+  // The location of Oslo
+  var oslo = {lat: 59.911491, lng: 10.757933};
+  // The map, centered at Oslo
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 13, center: oslo});
+
+
+  // The marker, positioned at Uluru
+  var denGladeGris = {lat: 59.9178541, lng: 10.7339675};
+  var rorbuaAkerBrygge = {lat: 59.9178541, lng: 10.7339675};
+  $("#restaurants").click(function(){
+      var marker = new google.maps.Marker({position: denGladeGris, map: map});
+    });
+}
+
+
+/*function initMap() {
   var map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 10,
+    zoom: 13,
     center: {
       lat: 59.911491,
       lng: 10.757933,
@@ -14,7 +32,7 @@ function initMap() {
 
 function myRestaurantLocation() {
   var map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 10,
+    zoom: 13,
     center: {
       lat: 59.911491,
       lng: 10.757933,
@@ -517,4 +535,4 @@ function myParks(){
 function myBars(){
     var x = document.getElementById("demo");
     x.innerHTML = bars.join("<br>");
-}
+}*/
