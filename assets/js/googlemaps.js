@@ -14,11 +14,29 @@ function initMap() {
   //var denGladeGris = {lat: 59.9178541, lng: 10.7339675};
   //var rorbuaAkerBrygge = {lat: 59.9088001, lng: 10.7247294};
   $("#restaurants").click(function () {
-    var marker = new google.maps.Marker({
-      position: { lat: 59.9178541, lng: 10.7339675 },
-      map: map,
-      icon:
-        "https://img.icons8.com/office/40/000000/marker.png",
+      //Den Glade Gris
+      addMarker({coords:{lat:59.9178541,lng:10.7339675}});
+
+
+       function addMarker(props){
+            var marker = new google.maps.Marker({
+            position:props.coords,
+            map:map,
+            icon:
+                "https://img.icons8.com/office/40/000000/marker.png",
+            });
+        };
+    });
+    
+
+    
+
+    /*var infowindow = new google.maps.InfoWindow({
+        content: '<h6>Den Glade Gris</h6>'
+    });
+
+    marker.addListener('click', function() {
+        infowindow.open(map, marker);
     });
     /*var restaurantLocations = [
       {
@@ -54,7 +72,6 @@ function initMap() {
         map: map,
       });
     }*/
-  });
 }
 
 /*function initMap() {
