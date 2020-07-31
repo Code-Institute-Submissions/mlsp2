@@ -3,20 +3,59 @@
 // Initialize and add the map
 function initMap() {
   // The location of Oslo
-  var oslo = {lat: 59.911491, lng: 10.757933};
+  var oslo = { lat: 59.911491, lng: 10.757933 };
   // The map, centered at Oslo
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 13, center: oslo});
+  var map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 13,
+    center: oslo,
+  });
 
-
-  // The marker, positioned at Uluru
-  var denGladeGris = {lat: 59.9178541, lng: 10.7339675};
-  var rorbuaAkerBrygge = {lat: 59.9178541, lng: 10.7339675};
-  $("#restaurants").click(function(){
-      var marker = new google.maps.Marker({position: denGladeGris, map: map});
+  // The locations
+  //var denGladeGris = {lat: 59.9178541, lng: 10.7339675};
+  //var rorbuaAkerBrygge = {lat: 59.9088001, lng: 10.7247294};
+  $("#restaurants").click(function () {
+    var marker = new google.maps.Marker({
+      position: { lat: 59.9178541, lng: 10.7339675 },
+      map: map,
+      icon:
+        "https://img.icons8.com/office/40/000000/marker.png",
     });
-}
+    /*var restaurantLocations = [
+      {
+        position: new google.maps.LatLng(59.9178541, 10.7339675),
+        icon:
+          "https://mapicons.mapsmarker.com/wp-content/uploads/mapicons/shape-default/color-ffa083/shapecolor-color/shadow-1/border-dark/symbolstyle-white/symbolshadowstyle-dark/gradient-no/restaurant.png",
+      },
+      {
+        position: new google.maps.LatLng(59.9088001, 10.7247294),
+        type: "info",
+      },
+    ];*/
 
+    // var iconBase = "https://www.w3schools.com/icons/google_icons_maps.asp";
+
+    /*var icons = {
+      restaurant: {
+        icon: iconBase + "parking_lot_maps.png",
+      },
+      library: {
+        icon: iconBase + "library_maps.png",
+      },
+      info: {
+        icon: iconBase + "info-i_maps.png",
+      },
+    };*/
+
+    //markers
+    /*for (var i = 0; i < restaurantLocations.length; i++) {
+      var marker = new google.maps.Marker({
+        position: restaurantLocations[i].position,
+        icon: icons[restaurantLocations[i].type].icon,
+        map: map,
+      });
+    }*/
+  });
+}
 
 /*function initMap() {
   var map = new google.maps.Map(document.getElementById("map"), {
