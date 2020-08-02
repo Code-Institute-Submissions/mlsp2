@@ -11,72 +11,69 @@ function initMap() {
   });
 
   // The locations
- 
+
   $("#restaurants").click(function () {
     //array of markers
 
-    var restaurantMarkers = [{
-          coords:{lat:59.9178541,lng:10.7339675},
-          content: '<h6>Den Glade Gris</h6>',
-        },
-        {
-          coords:{lat:59.9088001,lng:10.7247294},
-          content: '<h6>Rorbua Aker Brygge</h6>',
-        },
-        {
-          coords:{lat:59.9075576,lng:10.758191},
-          content: '<h6>Maaemo</h6>',
-        }];
+    var restaurantMarkers = [
+      {
+        coords: { lat: 59.9178541, lng: 10.7339675 },
+        content:
+          '<div class="marker"><h6>Den Glade Gris</h6><br><p>St. Olavs Gate 33</p></div>',
+      },
+      {
+        coords: { lat: 59.9088001, lng: 10.7247294 },
+        content: "<h6>Rorbua Aker Brygge</h6>",
+      },
+      {
+        coords: { lat: 59.9075576, lng: 10.758191 },
+        content: "<h6>Maaemo</h6>",
+      },
+    ];
 
-        //Loop Through Markers
-        for(var i = 0; i < restaurantMarkers.length; i++){
-            //Add Marker
-            addRestaurantMarker(restaurantMarkers[i]);
-        }
+    //Loop Through Markers
+    for (var i = 0; i < restaurantMarkers.length; i++) {
+      //Add Marker
+      addRestaurantMarker(restaurantMarkers[i]);
+    }
 
-        //Add Marker Function
-        function addRestaurantMarker(props){
-            var marker = new google.maps.Marker({
-            position:props.coords,
-            map:map,
-            icon:
-                "https://img.icons8.com/office/40/000000/marker.png",
-            });
-            if(props.content){
-                var infowindow = new google.maps.InfoWindow({
-                    content: props.content
-                });
+    //Add Marker Function
+    function addRestaurantMarker(props) {
+      var marker = new google.maps.Marker({
+        position: props.coords,
+        map: map,
+        icon: "https://img.icons8.com/office/40/000000/marker.png",
+      });
+      if ((props.content)) {
+        var infowindow = new google.maps.InfoWindow({
+          content: props.content
+        });
 
-                marker.addListener('click', function() {
-                    infowindow.open(map, marker);
-                });
-            }
-        };
-    });
+        marker.addListener("click", function () {
+          infowindow.open(map, marker);
+        });
+      }
+    }
+  });
 
-    $("#coffeeshops").click(function () {
-      //Espresso House
-      addMarker({coords:{lat:59.9087961,lng:10.7578227}});
-      //Starbucks
-      addMarker({coords:{lat:59.9111736,lng:10.7530403}});
-      //Tim Wendelboe
-      addMarker({coords:{lat:59.9233709,lng:10.7556998}});
+  $("#coffeeshops").click(function () {
+    //Espresso House
+    addMarker({ coords: { lat: 59.9087961, lng: 10.7578227 } });
+    //Starbucks
+    addMarker({ coords: { lat: 59.9111736, lng: 10.7530403 } });
+    //Tim Wendelboe
+    addMarker({ coords: { lat: 59.9233709, lng: 10.7556998 } });
 
+    function addMarker(props) {
+      var marker = new google.maps.Marker({
+        position: props.coords,
+        map: map,
+        icon: "https://img.icons8.com/ultraviolet/40/000000/marker.png",
+      });
+    }
+  });
 
-       function addMarker(props){
-            var marker = new google.maps.Marker({
-            position:props.coords,
-            map:map,
-            icon:
-                "https://img.icons8.com/ultraviolet/40/000000/marker.png",
-            });
-        };
-    });
-    
-
-    
-
-    /*var infowindow = new google.maps.InfoWindow({
+  /*var infowindow = new google.maps.InfoWindow({
         content: '<h6>Den Glade Gris</h6>'
     });
 
@@ -95,9 +92,9 @@ function initMap() {
       },
     ];*/
 
-    // var iconBase = "https://www.w3schools.com/icons/google_icons_maps.asp";
+  // var iconBase = "https://www.w3schools.com/icons/google_icons_maps.asp";
 
-    /*var icons = {
+  /*var icons = {
       restaurant: {
         icon: iconBase + "parking_lot_maps.png",
       },
@@ -109,8 +106,8 @@ function initMap() {
       },
     };*/
 
-    //markers
-    /*for (var i = 0; i < restaurantLocations.length; i++) {
+  //markers
+  /*for (var i = 0; i < restaurantLocations.length; i++) {
       var marker = new google.maps.Marker({
         position: restaurantLocations[i].position,
         icon: icons[restaurantLocations[i].type].icon,

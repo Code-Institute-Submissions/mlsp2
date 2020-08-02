@@ -338,11 +338,31 @@ button:focus{
   display: table;
 }
 
+.marker{
+    background: url("../images/test.jpg") no-repeat center;
+    width: 120px;
+    height: 110px;
+}
+
 h6 {
     font-family: "Varela Round", sans-serif;
     text-align: center;
     color: black;
     font-weight: 600;
+    font-size: 10px;
+}
+
+.marker p{
+    font-family: "Varela Round", sans-serif;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    font-size: 10px;
+    width: 120px;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    margin-bottom: 10px;
 }
 
 /* ----------------------------------------------- Explore Page End --- */
