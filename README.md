@@ -34,3 +34,30 @@ The website offers users the opportunity to discover the city though their servi
 You'll be able to view the sketches, wireframes, and mockups for this project in the **Wireframes** folder, located within the **Static** folder in the  [Github project repository](https://github.com/gaspar91/mlsp2).
 
 I used [Balsamiq](https://balsamiq.com/) to build the wireframes, so you might need the program in order to view some of the documents.
+
+
+# User Stories
+
+### User Story One:
+
+As a person visiting a new place I would like to know witch are the most recommended places to visit and the best accomodations to stay.
+
+### User Story Two:
+
+It's important to me that there are several places to visit to keep me entertained and have a fun experience.
+
+### User Story Three:
+
+It's important to me to see what the city looks like and I would like to see that through social media, with images and other people's comments.
+
+### User Story Three:
+
+Accessibility is fundamental for me, so if I can search for the website when I'm walking or I'm far away from my computer I can just search for it on my phone or tablet.
+
+### User Story Four:
+
+As someone who doesn't like to waist time with giving to much detail, filling up a short and quick form, in order to get more information is really nice and motivates me to do it.
+
+### User Story Five:
+
+It is also important that there is a confirmation of my submission.
