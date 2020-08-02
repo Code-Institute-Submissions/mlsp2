@@ -11,21 +11,31 @@ function initMap() {
   });
 
   // The locations
-  //var denGladeGris = {lat: 59.9178541, lng: 10.7339675};
-  //var rorbuaAkerBrygge = {lat: 59.9088001, lng: 10.7247294};
+ 
   $("#restaurants").click(function () {
-      //Den Glade Gris
-      addRestaurantMarker({
+    //array of markers
+
+    var restaurantMarkers = [{
           coords:{lat:59.9178541,lng:10.7339675},
-          content: '<h5>Den Glade Gris</h5>',
-        });
-      //Rorbua Aker Brygge
-      addRestaurantMarker({coords:{lat:59.9088001,lng:10.7247294}});
-      //Maaemo
-      addRestaurantMarker({coords:{lat:59.9075576,lng:10.758191}});
+          content: '<h6>Den Glade Gris</h6>',
+        },
+        {
+          coords:{lat:59.9088001,lng:10.7247294},
+          content: '<h6>Rorbua Aker Brygge</h6>',
+        },
+        {
+          coords:{lat:59.9075576,lng:10.758191},
+          content: '<h6>Maaemo</h6>',
+        }];
 
+        //Loop Through Markers
+        for(var i = 0; i < restaurantMarkers.length; i++){
+            //Add Marker
+            addRestaurantMarker(restaurantMarkers[i]);
+        }
 
-       function addRestaurantMarker(props){
+        //Add Marker Function
+        function addRestaurantMarker(props){
             var marker = new google.maps.Marker({
             position:props.coords,
             map:map,
@@ -34,7 +44,7 @@ function initMap() {
             });
             if(props.content){
                 var infowindow = new google.maps.InfoWindow({
-                    content: '<h5>Den Glade Gris</h5>'
+                    content: props.content
                 });
 
                 marker.addListener('click', function() {

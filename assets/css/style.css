@@ -338,6 +338,13 @@ button:focus{
   display: table;
 }
 
+h6 {
+    font-family: "Varela Round", sans-serif;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+}
+
 /* ----------------------------------------------- Explore Page End --- */
 
 /* ----------------------------------------------- Gallery Page Start --- */
