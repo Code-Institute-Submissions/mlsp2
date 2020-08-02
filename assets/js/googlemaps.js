@@ -15,7 +15,42 @@ function initMap() {
   //var rorbuaAkerBrygge = {lat: 59.9088001, lng: 10.7247294};
   $("#restaurants").click(function () {
       //Den Glade Gris
-      addMarker({coords:{lat:59.9178541,lng:10.7339675}});
+      addRestaurantMarker({
+          coords:{lat:59.9178541,lng:10.7339675},
+          content: '<h5>Den Glade Gris</h5>',
+        });
+      //Rorbua Aker Brygge
+      addRestaurantMarker({coords:{lat:59.9088001,lng:10.7247294}});
+      //Maaemo
+      addRestaurantMarker({coords:{lat:59.9075576,lng:10.758191}});
+
+
+       function addRestaurantMarker(props){
+            var marker = new google.maps.Marker({
+            position:props.coords,
+            map:map,
+            icon:
+                "https://img.icons8.com/office/40/000000/marker.png",
+            });
+            if(props.content){
+                var infowindow = new google.maps.InfoWindow({
+                    content: '<h5>Den Glade Gris</h5>'
+                });
+
+                marker.addListener('click', function() {
+                    infowindow.open(map, marker);
+                });
+            }
+        };
+    });
+
+    $("#coffeeshops").click(function () {
+      //Espresso House
+      addMarker({coords:{lat:59.9087961,lng:10.7578227}});
+      //Starbucks
+      addMarker({coords:{lat:59.9111736,lng:10.7530403}});
+      //Tim Wendelboe
+      addMarker({coords:{lat:59.9233709,lng:10.7556998}});
 
 
        function addMarker(props){
@@ -23,7 +58,7 @@ function initMap() {
             position:props.coords,
             map:map,
             icon:
-                "https://img.icons8.com/office/40/000000/marker.png",
+                "https://img.icons8.com/ultraviolet/40/000000/marker.png",
             });
         };
     });
