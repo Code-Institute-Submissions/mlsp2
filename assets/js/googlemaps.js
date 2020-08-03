@@ -81,9 +81,9 @@ function initMap() {
         map: map,
         icon: "https://img.icons8.com/office/40/000000/marker.png",
       });
-      if ((props.content)) {
+      if (props.content) {
         var infowindow = new google.maps.InfoWindow({
-          content: props.content
+          content: props.content,
         });
 
         marker.addListener("click", function () {
