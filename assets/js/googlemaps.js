@@ -10,7 +10,7 @@ function initMap() {
     center: oslo,
   });
 
-  // The locations
+  // The  Restaurant Locations
 
   $("#restaurants").click(function () {
     //array of markers
@@ -23,11 +23,48 @@ function initMap() {
       },
       {
         coords: { lat: 59.9088001, lng: 10.7247294 },
-        content: "<h6>Rorbua Aker Brygge</h6>",
+        content:
+          '<div class="marker"><h6>Rorbua Aker Brygge</h6><br><p>Stranden 71</p></div>',
       },
       {
         coords: { lat: 59.9075576, lng: 10.758191 },
-        content: "<h6>Maaemo</h6>",
+        content:
+          '<div class="marker"><h6>Maaemo</h6><br><p>Dronning Eufemias gate 23</p></div>',
+      },
+      {
+        coords: { lat: 59.9226899, lng: 10.7356068 },
+        content:
+          '<div class="marker"><h6>Sofies Mat Og Vinhus</h6><br><p>Sofies gate 15</p></div>',
+      },
+      {
+        coords: { lat: 59.9167545, lng: 10.7377502 },
+        content:
+          '<div class="marker"><h6>Restaurant Fjord</h6><br><p>Kristian Augusts gate 11</p></div>',
+      },
+      {
+        coords: { lat: 59.9091625, lng: 10.7422209 },
+        content:
+          '<div class="marker"><h6>Rest</h6><br><p>Kirkegata 1-3</p></div>',
+      },
+      {
+        coords: { lat: 59.9163672, lng: 10.7506229 },
+        content:
+          '<div class="marker"><h6>Arakataka</h6><br><p>Mariboes gate 7B</p></div>',
+      },
+      {
+        coords: { lat: 59.9163238, lng: 10.7387246 },
+        content:
+          '<div class="marker"><h6>Elias mat & sånt</h6><br><p>Kristian Augusts gate 14</p></div>',
+      },
+      {
+        coords: { lat: 59.9229418, lng: 10.7511292 },
+        content:
+          '<div class="marker"><h6>Restaurant Kontrast</h6><br><p>Maridalsveien 15a</p></div>',
+      },
+      {
+        coords: { lat: 59.912725, lng: 10.7093833 },
+        content:
+          '<div class="marker"><h6>Hos Thea</h6><br><p>Gabels gate 11</p></div>',
       },
     ];
 
