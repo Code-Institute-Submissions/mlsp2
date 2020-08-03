@@ -19,7 +19,7 @@ function initMap() {
       {
         coords: { lat: 59.9178541, lng: 10.7339675 },
         content:
-          '<div class="marker"><h6>Den Glade Gris</h6><br><p>St. Olavs Gate 33</p></div>',
+          '<div class="marker" style="background: url(assets/images/restaurant1.jpg) no-repeat center"><h6>Den Glade Gris</h6><br><p>St. Olavs Gate 33</p></div>',
       },
       {
         coords: { lat: 59.9088001, lng: 10.7247294 },
