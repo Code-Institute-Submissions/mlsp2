@@ -19,52 +19,52 @@ function initMap() {
       {
         coords: { lat: 59.9178541, lng: 10.7339675 },
         content:
-          '<div class="marker" style="background: url(assets/images/restaurant1.jpg) no-repeat center"><h6>Den Glade Gris</h6><br><p>St. Olavs Gate 33</p></div>',
+          '<div class="marker" style="background: url(assets/images/restaurants/restaurant1.jpg) no-repeat center"><h6>Den Glade Gris</h6><br><p>St. Olavs Gate 33</p></div>',
       },
       {
         coords: { lat: 59.9088001, lng: 10.7247294 },
         content:
-          '<div class="marker" style="background: url(assets/images/restaurant2.jpg) no-repeat center"><h6>Rorbua Aker Brygge</h6><br><p>Stranden 71</p></div>',
+          '<div class="marker" style="background: url(assets/images/restaurants/restaurant2.jpg) no-repeat center"><h6>Rorbua Aker Brygge</h6><br><p>Stranden 71</p></div>',
       },
       {
         coords: { lat: 59.9075576, lng: 10.758191 },
         content:
-          '<div class="marker" style="background: url(assets/images/restaurant3.jpg) no-repeat center"><h6>Maaemo</h6><br><p>Dronning Eufemias gate 23</p></div>',
+          '<div class="marker" style="background: url(assets/images/restaurants/restaurant3.jpg) no-repeat center"><h6>Maaemo</h6><br><p>Dronning Eufemias gate 23</p></div>',
       },
       {
         coords: { lat: 59.9226899, lng: 10.7356068 },
         content:
-          '<div class="marker" style="background: url(assets/images/restaurant4.jpg) no-repeat center"><h6>Sofies Mat Og Vinhus</h6><br><p>Sofies gate 15</p></div>',
+          '<div class="marker" style="background: url(assets/images/restaurants/restaurant4.jpg) no-repeat center"><h6>Sofies Mat Og Vinhus</h6><br><p>Sofies gate 15</p></div>',
       },
       {
         coords: { lat: 59.9167545, lng: 10.7377502 },
         content:
-          '<div class="marker" style="background: url(assets/images/restaurant5.jpg) no-repeat center"><h6>Restaurant Fjord</h6><br><p>Kristian Augusts gate 11</p></div>',
+          '<div class="marker" style="background: url(assets/images/restaurants/restaurant5.jpg) no-repeat center"><h6>Restaurant Fjord</h6><br><p>Kristian Augusts gate 11</p></div>',
       },
       {
         coords: { lat: 59.9091625, lng: 10.7422209 },
         content:
-          '<div class="marker" style="background: url(assets/images/restaurant6.jpg) no-repeat center"><h6>Rest</h6><br><p>Kirkegata 1-3</p></div>',
+          '<div class="marker" style="background: url(assets/images/restaurants/restaurant6.jpg) no-repeat center"><h6>Rest</h6><br><p>Kirkegata 1-3</p></div>',
       },
       {
         coords: { lat: 59.9163672, lng: 10.7506229 },
         content:
-          '<div class="marker" style="background: url(assets/images/restaurant7.jpg) no-repeat center"><h6>Arakataka</h6><br><p>Mariboes gate 7B</p></div>',
+          '<div class="marker" style="background: url(assets/images/restaurants/restaurant7.jpg) no-repeat center"><h6>Arakataka</h6><br><p>Mariboes gate 7B</p></div>',
       },
       {
         coords: { lat: 59.9163238, lng: 10.7387246 },
         content:
-          '<div class="marker" style="background: url(assets/images/restaurant8.jpg) no-repeat center"><h6>Elias mat & sånt</h6><br><p>Kristian Augusts gate 14</p></div>',
+          '<div class="marker" style="background: url(assets/images/restaurants/restaurant8.jpg) no-repeat center"><h6>Elias mat & sånt</h6><br><p>Kristian Augusts gate 14</p></div>',
       },
       {
         coords: { lat: 59.9229418, lng: 10.7511292 },
         content:
-          '<div class="marker" style="background: url(assets/images/restaurant9.jpg) no-repeat center"><h6>Restaurant Kontrast</h6><br><p>Maridalsveien 15a</p></div>',
+          '<div class="marker" style="background: url(assets/images/restaurants/restaurant9.jpg) no-repeat center"><h6>Restaurant Kontrast</h6><br><p>Maridalsveien 15a</p></div>',
       },
       {
         coords: { lat: 59.912725, lng: 10.7093833 },
         content:
-          '<div class="marker" style="background: url(assets/images/restaurant10.jpg) no-repeat center"><h6>Hos Thea</h6><br><p>Gabels gate 11</p></div>',
+          '<div class="marker" style="background: url(assets/images/restaurants/restaurant10.jpg) no-repeat center"><h6>Hos Thea</h6><br><p>Gabels gate 11</p></div>',
       },
     ];
 
