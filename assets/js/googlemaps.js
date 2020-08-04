@@ -453,9 +453,9 @@ function initMap() {
     // The Bars Locations
   
   $("#bars").click(function () {
-      var oslo = { lat: 59.9177345, lng: 10.7370972 };
+      var oslo = { lat: 59.9193175, lng: 10.7543608 };
        var map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 13,
+            zoom: 14,
             center: oslo,
         });
     //array of markers
