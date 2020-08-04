@@ -274,10 +274,12 @@ function initMap() {
     }
   });
 
+    // The Activities Locations
+
   $("#activities").click(function () {
-      var oslo = { lat: 59.9132002, lng: 10.7533018 };
+      var oslo = { lat: 59.9114009, lng: 10.7483125 };
        var map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 15,
+            zoom: 14,
             center: oslo,
         });
     //array of markers
@@ -321,7 +323,7 @@ function initMap() {
       {
         coords: { lat: 59.907586, lng: 10.7370841 },
         content:
-          '<div class="marker" style="background: url(assets/activities/fun8.jpg) no-repeat center"><h6>Akershus Festning</h6><br><p>0150 Oslo</p></div>',
+          '<div class="marker" style="background: url(assets/images/activities/fun8.jpg) no-repeat center"><h6>Akershus Festning</h6><br><p>0150 Oslo</p></div>',
       },
       {
         coords: { lat: 59.9077956, lng: 10.7356282 },
@@ -360,131 +362,110 @@ function initMap() {
     }
   });
 
-  
-}
+    // The Parks Locations
 
+  $("#parks").click(function () {
+      var oslo = { lat: 59.9177345, lng: 10.7370972 };
+       var map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 13,
+            center: oslo,
+        });
+    //array of markers
 
+    var parksMarkers = [
+      {
+        coords: { lat: 59.9264583, lng: 10.7034734 },
+        content:
+          '<div class="marker" style="background: url(assets/images/parks/parks1.jpg) no-repeat center"><h6>Frognerparken</h6><br><p>Kirkeveien</p></div>',
+      },
+      {
+        coords: { lat: 59.917625, lng: 10.730332 },
+        content:
+          '<div class="marker" style="background: url(assets/images/parks/parks2.jpg) no-repeat center"><h6>Slottsparken</h6><br><p>Slottsplassen 1</p></div>',
+      },
+      {
+        coords: { lat: 59.927029, lng: 10.700865 },
+        content:
+          '<div class="marker" style="background: url(assets/images/parks/parks3.jpg) no-repeat center"><h6>Vigelandsparken</h6><br><p>Nobels gate 32</p></div>',
+      },
+      {
+        coords: { lat: 59.8995816, lng: 10.7611578 },
+        content:
+          '<div class="marker" style="background: url(assets/images/parks/parks4.jpg) no-repeat center"><h6>Ekebergparken Skulpturpark</h6><br><p>Kongsveien 15</p></div>',
+      },
+      {
+        coords: { lat: 59.9063176, lng: 10.7217175 },
+        content:
+          '<div class="marker" style="background: url(assets/images/parks/parks5.jpg) no-repeat center"><h6>Tjuvholmen Sculpture Park</h6><br><p>Strandpromenaden 2</p></div>',
+      },
+      {
+        coords: { lat: 59.9230071, lng: 10.764023 },
+        content:
+          '<div class="marker" style="background: url(assets/images/parks/parks6.jpg) no-repeat center"><h6>Sofienberg Park</h6><br><p>Sofienberggata 14</p></div>',
+      },
+      {
+        coords: { lat: 59.9047091, lng: 10.7625675 },
+        content:
+          '<div class="marker" style="background: url(assets/images/parks/parks7.jpg) no-repeat center"><h6>Middelalderparken</h6><br><p>Sørenga 5</p></div>',
+      },
+      {
+        coords: { lat: 59.9171009, lng: 10.7772202 },
+        content:
+          '<div class="marker" style="background: url(assets/images/parks/parks8.jpg) no-repeat center"><h6>Tøyen Park</h6><br><p>Helgesens gate 90</p></div>',
+      },
+      {
+        coords: { lat: 59.9147141, lng: 10.734458 },
+        content:
+          '<div class="marker" style="background: url(assets/images/parks/parks9.jpg) no-repeat center"><h6>Studenterlunden Park</h6><br><p>Johanne Dybwads plass</p></div>',
+      },
+      {
+        coords: { lat: 59.9131819, lng: 10.7570827 },
+        content:
+          '<div class="marker" style="background: url(assets/images/parks/parks10.jpg) no-repeat center"><h6>Vaterlandsparken</h6><br><p>0186 Oslo</p></div>',
+      },
+      ];
 
-
-
-/*function myAccomodationLocation() {
-  var map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 10,
-    center: {
-      lat: 59.911491,
-      lng: 10.757933,
-    },
-  });
-
-  var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
-
-  
-    {
-    },
-    {
+     //Loop Through Markers
+    for (var i = 0; i < parksMarkers.length; i++) {
+      //Add Marker
+      addMarker(parksMarkers[i]);
     }
-  ];
 
-  var markers = locations.map(function (location, i) {
-    return new google.maps.Marker({
-      position: location,
-      label: labels[i % labels.length],
-    });
-  });
+    //Add Marker Function
+    function addMarker(props) {
+      var marker = new google.maps.Marker({
+        position: props.coords,
+        map: map,
+        icon: "https://img.icons8.com/office/40/000000/marker.png",
+      });
+      if (props.content) {
+        var infowindow = new google.maps.InfoWindow({
+          content: props.content,
+        });
 
-  var markerCluster = new MarkerClusterer(map, markers, {
-    imagePath:
-      "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
+        marker.addListener("click", function () {
+          infowindow.open(map, marker);
+        });
+      }
+    }
   });
+  
 }
-function myActivitiesLocation() {
-  var map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 10,
-    center: {
-      lat: 59.911491,
-      lng: 10.757933,
-    },
-  });
 
-  var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
 
-  //coffee shops locations
+
+
+
+/*
 
   var locations = [
     
-    {
+   
+    {/
     },
     {
     },
     {
-    }
-  ];
-
-  var markers = locations.map(function (location, i) {
-    return new google.maps.Marker({
-      position: location,
-      label: labels[i % labels.length],
-    });
-  });
-
-  var markerCluster = new MarkerClusterer(map, markers, {
-    imagePath:
-      "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
-  });
-}
-function myParksLocation() {
-  var map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 10,
-    center: {
-      lat: 59.911491,
-      lng: 10.757933,
-    },
-  });
-
-  var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
-
-  //coffee shops locations
-
-  var locations = [
-    {//Frognerparken
-      lat: 59.9264583,
-      lng: 10.7034734,
-    },
-    {//Slottsparken
-      lat: 59.917625,
-      lng: 10.730332,
-    },
-    {//Vigelandsparken
-      lat: 59.927029,
-      lng: 10.700865,
-    },
-    {// Ekebergparken Skulpturpark
-      lat: 59.8995816,
-      lng: 10.7611578,
-    },
-    {// Tjuvholmen Sculpture Park
-      lat: 59.9063176,
-      lng: 10.7217175,
-    },
-    {// Sofienberg Park
-      lat: 59.9230071,
-      lng: 10.764023,
-    },
-    {// Middelalderparken
-      lat: 59.9047091,
-      lng: 10.7625675,
-    },
-    {// Tøyen Park
-      lat: 59.9171009,
-      lng: 10.7772202,
-    },
-    {// Studenterlunden Park
-      lat: 59.9147141,
-      lng: 10.734458,
-    },
-    {// Vaterlandsparken
-      lat: 59.9131819,
-      lng: 10.7570827,
     }
   ];
 
