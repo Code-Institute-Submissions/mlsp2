@@ -449,7 +449,94 @@ function initMap() {
       }
     }
   });
+
+    // The Bars Locations
   
+  $("#bars").click(function () {
+      var oslo = { lat: 59.9177345, lng: 10.7370972 };
+       var map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 13,
+            center: oslo,
+        });
+    //array of markers
+
+    var barsMarkers = [
+      {
+        coords: { lat: 59.9136839, lng: 10.7399639 },
+        content:
+          '<div class="marker" style="background: url(assets/images/bars/bar1.jpg) no-repeat center"><h6>Eight</h6><br><p>Karl Johans gate 27</p></div>',
+      },
+      {
+        coords: { lat: 59.9139799, lng: 10.7487005 },
+        content:
+          '<div class="marker" style="background: url(assets/images/bars/bar2.jpg) no-repeat center"><h6>Angst</h6><br><p>Torggata 11</p></div>',
+      },
+      {
+        coords: { lat: 59.9154592, lng: 10.737899 },
+        content:
+          '<div class="marker" style="background: url(assets/images/bars/bar3.jpg) no-repeat center"><h6>Magic Ice Bar</h6><br><p>Kristian IVs gate 12</p></div>',
+      },
+      {
+        coords: { lat: 59.9140704, lng: 10.7514605 },
+        content:
+          '<div class="marker" style="background: url(assets/images/bars/bar4.jpg) no-repeat center"><h6>HIMKOK Storgata Destilleri</h6><br><p>Storgata 27</p></div>',
+      },
+      {
+        coords: { lat: 59.9248815, lng: 10.7594508 },
+        content:
+          '<div class="marker" style="background: url(assets/images/bars/bar5.jpg) no-repeat center"><h6>Aku-Aku Tiki Bar</h6><br><p>Thorvald Meyers gate 32</p></div>',
+      },
+      {
+        coords: { lat: 59.9147255, lng: 10.7365552 },
+        content:
+          '<div class="marker" style="background: url(assets/images/bars/bar6.jpg) no-repeat center"><h6>Last Train</h6><br><p>Karl Johans gate 45</p></div>',
+      },
+      {
+        coords: { lat: 59.9171972, lng: 10.7534148 },
+        content:
+          '<div class="marker" style="background: url(assets/images/bars/bar7.jpg) no-repeat center"><h6> Crow Bar & Brewery</h6><br><p>Torggata 32</p></div>',
+      },
+      {
+        coords: { lat: 59.9140818, lng: 10.7552122 },
+        content:
+          '<div class="marker" style="background: url(assets/images/bars/bar8.jpg) no-repeat center"><h6>Brewgata</h6><br><p>Brugata 5</p></div>',
+      },
+      {
+        coords: { lat: 59.9254338, lng: 10.759332 },
+        content:
+          '<div class="marker" style="background: url(assets/images/bars/bar9.jpg) no-repeat center"><h6>Bar Boca</h6><br><p>Thorvald Meyers gate 30</p></div>',
+      },
+      {
+        coords: { lat: 59.9187185, lng: 10.7339001 },
+        content:
+          '<div class="marker" style="background: url(assets/images/bars/bar10.jpg) no-repeat center"><h6>Summit Bar</h6><br><p>Holbergs gate 30</p></div>',
+      },
+      ];
+
+     //Loop Through Markers
+    for (var i = 0; i < barsMarkers.length; i++) {
+      //Add Marker
+      addMarker(barsMarkers[i]);
+    }
+
+    //Add Marker Function
+    function addMarker(props) {
+      var marker = new google.maps.Marker({
+        position: props.coords,
+        map: map,
+        icon: "https://img.icons8.com/office/40/000000/marker.png",
+      });
+      if (props.content) {
+        var infowindow = new google.maps.InfoWindow({
+          content: props.content,
+        });
+
+        marker.addListener("click", function () {
+          infowindow.open(map, marker);
+        });
+      }
+    }
+  });
 }
 
 
@@ -458,28 +545,7 @@ function initMap() {
 
 /*
 
-  var locations = [
-    
-   
-    {/
-    },
-    {
-    },
-    {
-    }
-  ];
-
-  var markers = locations.map(function (location, i) {
-    return new google.maps.Marker({
-      position: location,
-      label: labels[i % labels.length],
-    });
-  });
-
-  var markerCluster = new MarkerClusterer(map, markers, {
-    imagePath:
-      "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
-  });
+  
 }
 function myBarsLocation() {
   var map = new google.maps.Map(document.getElementById("map"), {
@@ -495,45 +561,12 @@ function myBarsLocation() {
   //coffee shops locations
 
   var locations = [
-    {//Eight
-      lat: 59.9136839,
-      lng: 10.7399639,
+    {
+  
+    
+    {
     },
-    {//Angst
-      lat: 59.9139799,
-      lng: 10.7487005,
-    },
-    {//Magic Ice Bar
-      lat: 59.9154592,
-      lng: 10.737899,
-    },
-    {// HIMKOK Storgata Destilleri
-      lat: 59.9140704,
-      lng: 10.7514605,
-    },
-    {// Aku-Aku Tiki Bar
-      lat: 59.9248815,
-      lng: 10.7594508,
-    },
-    {//Last Train
-      lat: 59.9147255,
-      lng: 10.7365552,
-    },
-    {// Crow Bar & Brewery
-      lat: 59.9171972,
-      lng: 10.7534148,
-    },
-    {// Brewgata
-      lat: 59.9140818,
-      lng: 10.7552122,
-    },
-    {// Bar Boca
-      lat: 59.9254338,
-      lng: 10.759332,
-    },
-    {// Summit Bar
-      lat: 59.9187185,
-      lng: 10.7339001,
+    {
     }
   ];
 
