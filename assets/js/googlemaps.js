@@ -274,7 +274,91 @@ function initMap() {
     }
   });
 
-  
+  $("#activities").click(function () {
+      var oslo = { lat: 59.9132002, lng: 10.7533018 };
+       var map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 15,
+            center: oslo,
+        });
+    //array of markers
+
+    var activitiesMarkers = [
+      {
+        coords: { lat: 59.9012828, lng: 10.7524521 },
+        content:
+          '<div class="marker" style="background: url(assets/images/activities/fun1.jpg) no-repeat center"><h6>Friluftshuset</h6><br><p>Sørengkaia 122</p></div>',
+      },
+      {
+        coords: { lat: 59.9108958, lng: 10.7508731 },
+        content:
+          '<div class="marker" style="background: url(assets/images/activities/fun2.jpg) no-repeat center"><h6>Oslo Visitor Center</h6><br><p>Jernbanetorget 1</p></div>',
+      },
+      {
+        coords: { lat: 59.9106119, lng: 10.7412764 },
+        content:
+          '<div class="marker" style="background: url(assets/images/activities/fun3.jpg) no-repeat center"><h6>Viking Biking & Viking Hiking</h6><br><p>Nedre Slottsgate 4</p></div>',
+      },
+      {
+        coords: { lat: 59.9104695, lng: 10.7316016 },
+        content:
+          '<div class="marker" style="background: url(assets/images/activities/fun4.jpg) no-repeat center"><h6>Norway Yacht Charter</h6><br><p>Rådhusbrygge 3</p></div>',
+      },
+      {
+        coords: { lat: 59.9184768, lng: 10.7588392 },
+        content:
+          '<div class="marker" style="background: url(assets/images/activities/fun5.jpg) no-repeat center"><h6>Grünerløkka Minigolf Park</h6><br><p>Søndre gate 1</p></div>',
+      },
+      {
+        coords: { lat: 59.9111335, lng: 10.7502324 },
+        content:
+          '<div class="marker" style="background: url(assets/images/activities/fun6.jpg) no-repeat center"><h6>Free Walking Tours Oslo</h6><br><p>Jernbanetorget 8</p></div>',
+      },
+      {
+        coords: { lat: 59.9074885, lng: 10.7531275 },
+        content:
+          '<div class="marker" style="background: url(assets/images/activities/fun7.jpg) no-repeat center"><h6>Operahuset Oslo</h6><br><p>Kirsten Flagstads Plass 1</p></div>',
+      },
+      {
+        coords: { lat: 59.907586, lng: 10.7370841 },
+        content:
+          '<div class="marker" style="background: url(assets/activities/fun8.jpg) no-repeat center"><h6>Akershus Festning</h6><br><p>0150 Oslo</p></div>',
+      },
+      {
+        coords: { lat: 59.9077956, lng: 10.7356282 },
+        content:
+          '<div class="marker" style="background: url(assets/images/activities/fun9.jpg) no-repeat center"><h6>Norway Resistance Museum</h6><br><p>Bygning 21</p></div>',
+      },
+      {
+        coords: { lat: 59.9200554, lng: 10.7475185 },
+        content:
+          '<div class="marker" style="background: url(assets/images/activities/fun10.jpg) no-repeat center"><h6>Damstredet and Telthusbakken</h6><br><p>Damstredet 4A</p></div>',
+      },
+      ];
+
+     //Loop Through Markers
+    for (var i = 0; i < activitiesMarkers.length; i++) {
+      //Add Marker
+      addMarker(activitiesMarkers[i]);
+    }
+
+    //Add Marker Function
+    function addMarker(props) {
+      var marker = new google.maps.Marker({
+        position: props.coords,
+        map: map,
+        icon: "https://img.icons8.com/office/40/000000/marker.png",
+      });
+      if (props.content) {
+        var infowindow = new google.maps.InfoWindow({
+          content: props.content,
+        });
+
+        marker.addListener("click", function () {
+          infowindow.open(map, marker);
+        });
+      }
+    }
+  });
 
   
 }
@@ -327,45 +411,12 @@ function myActivitiesLocation() {
   //coffee shops locations
 
   var locations = [
-    {//Friluftshuset
-      lat: 59.9012828,
-      lng: 10.7524521,
+    
+    {
     },
-    {//Oslo Visitor Center
-      lat: 59.9108958,
-      lng: 10.7508731,
+    {
     },
-    {//Viking Biking & Viking Hiking
-      lat: 59.9106119,
-      lng: 10.7412764,
-    },
-    {// Norway Yacht Charter
-      lat: 59.9104695,
-      lng: 10.7316016,
-    },
-    {// Grünerløkka Minigolf Park
-      lat: 59.9184768,
-      lng: 10.7588392,
-    },
-    {// Free Walking Tours Oslo
-      lat: 59.9111335,
-      lng: 10.7502324,
-    },
-    {// Operahuset Oslo
-      lat: 59.9074885,
-      lng: 10.7531275,
-    },
-    {// Akershus Festning
-      lat: 59.907586,
-      lng: 10.7370841,
-    },
-    {// Norway Resistance Museum
-      lat: 59.9077956,
-      lng: 10.7356282,
-    },
-    {// Damstredet and Telthusbakken
-      lat: 59.9200554,
-      lng: 10.7475185,
+    {
     }
   ];
 
