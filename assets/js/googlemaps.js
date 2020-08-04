@@ -13,9 +13,9 @@ function initMap() {
   // The  Restaurant Locations
 
   $("#restaurants").click(function () {
-       var oslo = { lat: 59.911491, lng: 10.757933 };
+       var oslo = { lat: 59.9160454, lng: 10.7362453 };
        var map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 13,
+            zoom: 14,
             center: oslo,
         });
     //array of markers
@@ -101,9 +101,9 @@ function initMap() {
     // The  CoffeeShop Locations 
 
   $("#coffeeshops").click(function () {
-      var oslo = { lat: 59.911491, lng: 10.757933 };
+      var oslo = { lat: 59.9211046, lng: 10.7427449 };
        var map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 13,
+            zoom: 14,
             center: oslo,
         });
     //array of markers
@@ -189,9 +189,9 @@ function initMap() {
     // The  Accomodation Locations 
     
   $("#accomodation").click(function () {
-      var oslo = { lat: 59.911491, lng: 10.757933 };
+      var oslo = { lat: 59.9132002, lng: 10.7533018 };
        var map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 13,
+            zoom: 15,
             center: oslo,
         });
     //array of markers
@@ -200,52 +200,52 @@ function initMap() {
       {
         coords: { lat: 59.9100318, lng: 10.741466, },
         content:
-          '<div class="marker" style="background: url(assets/images/coffeeshops/coffee3.jpg) no-repeat center"><h6>Saga Hotel Oslo Central</h6><br><p>Kongens gate 7</p></div>',
+          '<div class="marker" style="background: url(assets/images/accomodation/room1.jpg) no-repeat center"><h6>Saga Hotel Oslo Central</h6><br><p>Kongens gate 7</p></div>',
       },
       {
         coords: { lat: 59.9156194, lng: 10.7404806 },
         content:
-          '<div class="marker" style="background: url(assets/images/coffeeshops/coffee2.jpg) no-repeat center"><h6>Thon Hotel Rosenkrantz Oslo</h6><br><p>Rosenkrantz gate 1</p></div>',
+          '<div class="marker" style="background: url(assets/images/accomodation/room2.jpg) no-repeat center"><h6>Thon Hotel Rosenkrantz Oslo</h6><br><p>Rosenkrantz gate 1</p></div>',
       },
       {
         coords: { lat: 59.9136725, lng: 10.7774321 },
         content:
-          '<div class="marker" style="background: url(assets/images/coffeeshops/coffee1.jpg) no-repeat center"><h6>Central City Apartments</h6><br><p>Kjølberggata 29C</p></div>',
+          '<div class="marker" style="background: url(assets/images/accomodation/room3.jpg) no-repeat center"><h6>Central City Apartments</h6><br><p>Kjølberggata 29C</p></div>',
       },
       {
         coords: { lat: 59.9092528, lng: 10.7666435 },
         content:
-          '<div class="marker" style="background: url(assets/images/coffeeshops/coffee4.jpg) no-repeat center"><h6>Center rooms</h6><br><p>Schweigaards gate 44</p></div>',
+          '<div class="marker" style="background: url(assets/images/accomodation/room4.jpg) no-repeat center"><h6>Center rooms</h6><br><p>Schweigaards gate 44</p></div>',
       },
       {
         coords: { lat: 59.9103456, lng: 10.7472907 },
         content:
-          '<div class="marker" style="background: url(assets/images/coffeeshops/coffee5.jpg) no-repeat center"><h6>Citybox Oslo</h6><br><p>Prinsens gate 6</p></div>',
+          '<div class="marker" style="background: url(assets/images/accomodation/room5.jpg) no-repeat center"><h6>Citybox Oslo</h6><br><p>Prinsens gate 6</p></div>',
       },
       {
         coords: { lat: 59.9106631, lng: 10.748712 },
         content:
-          '<div class="marker" style="background: url(assets/images/coffeeshops/coffee6.jpg) no-repeat center"><h6>Comfort Hotel Xpress</h6><br><p>Fred Olsens gate 11</p></div>',
+          '<div class="marker" style="background: url(assets/images/accomodation/room6.jpg) no-repeat center"><h6>Comfort Hotel Xpress</h6><br><p>Fred Olsens gate 11</p></div>',
       },
       {
         coords: { lat: 59.9144276, lng: 10.7421132 },
         content:
-          '<div class="marker" style="background: url(assets/images/coffeeshops/coffee7.jpg) no-repeat center"><h6>P-Hotel Oslo</h6><br><p>Grensen 19</p></div>',
+          '<div class="marker" style="background: url(assets/images/accomodation/room7.jpg) no-repeat center"><h6>P-Hotel Oslo</h6><br><p>Grensen 19</p></div>',
       },
       {
-        coords: { lat: 59.9100318, lng: 10.741466 },
+        coords: { lat: 59.9139846, lng: 10.7556568 },
         content:
-          '<div class="marker" style="background: url(assets/images/coffeeshops/coffee8.jpg) no-repeat center"><h6>My ugly baby</h6><br><p>Youngs gate 9</p></div>',
+          '<div class="marker" style="background: url(assets/images/accomodation/room8.jpg) no-repeat center"><h6>Thon Hotel Spectrum</h6><br><p>Brugata 7</p></div>',
       },
       {
         coords: { lat: 59.9164346, lng: 10.749522 },
         content:
-          '<div class="marker" style="background: url(assets/images/coffeeshops/coffee9.jpg) no-repeat center"><h6>Comfort Hotel Xpress Youngstorget</h6><br><p>Møllergata 26</p></div>',
+          '<div class="marker" style="background: url(assets/images/accomodation/room9.jpg) no-repeat center"><h6>Comfort Hotel Youngstorget</h6><br><p>Møllergata 26</p></div>',
       },
       {
         coords: { lat: 59.9118434, lng: 10.7461162 },
         content:
-          '<div class="marker" style="background: url(assets/images/coffeeshops/coffee10.jpg) no-repeat center"><h6>Comfort Hotel Karl Johan</h6><br><p>Karl Johans gate 12</p></div>',
+          '<div class="marker" style="background: url(assets/images/accomodation/room10.jpg) no-repeat center"><h6>Comfort Hotel Karl Johan</h6><br><p>Karl Johans gate 12</p></div>',
       },
       ];
 
