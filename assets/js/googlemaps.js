@@ -13,6 +13,11 @@ function initMap() {
   // The  Restaurant Locations
 
   $("#restaurants").click(function () {
+       var oslo = { lat: 59.911491, lng: 10.757933 };
+       var map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 13,
+            center: oslo,
+        });
     //array of markers
 
     var restaurantMarkers = [
@@ -93,7 +98,14 @@ function initMap() {
     }
   });
 
+    // The  CoffeeShop Locations 
+
   $("#coffeeshops").click(function () {
+      var oslo = { lat: 59.911491, lng: 10.757933 };
+       var map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 13,
+            center: oslo,
+        });
     //array of markers
 
     var coffeeshopMarkers = [
@@ -160,7 +172,7 @@ function initMap() {
       var marker = new google.maps.Marker({
         position: props.coords,
         map: map,
-        icon: "https://img.icons8.com/ultraviolet/40/000000/marker.png",
+        icon: "https://img.icons8.com/office/40/000000/marker.png",
       });
       if (props.content) {
         var infowindow = new google.maps.InfoWindow({
@@ -174,130 +186,104 @@ function initMap() {
     }
   });
 
-  /*var infowindow = new google.maps.InfoWindow({
-        content: '<h6>Den Glade Gris</h6>'
-    });
+    // The  Accomodation Locations 
+    
+  $("#accomodation").click(function () {
+      var oslo = { lat: 59.911491, lng: 10.757933 };
+       var map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 13,
+            center: oslo,
+        });
+    //array of markers
 
-    marker.addListener('click', function() {
-        infowindow.open(map, marker);
-    });
-    /*var restaurantLocations = [
+    var accomodationMarkers = [
       {
-        position: new google.maps.LatLng(59.9178541, 10.7339675),
-        icon:
-          "https://mapicons.mapsmarker.com/wp-content/uploads/mapicons/shape-default/color-ffa083/shapecolor-color/shadow-1/border-dark/symbolstyle-white/symbolshadowstyle-dark/gradient-no/restaurant.png",
+        coords: { lat: 59.9100318, lng: 10.741466, },
+        content:
+          '<div class="marker" style="background: url(assets/images/coffeeshops/coffee3.jpg) no-repeat center"><h6>Saga Hotel Oslo Central</h6><br><p>Kongens gate 7</p></div>',
       },
       {
-        position: new google.maps.LatLng(59.9088001, 10.7247294),
-        type: "info",
+        coords: { lat: 59.9156194, lng: 10.7404806 },
+        content:
+          '<div class="marker" style="background: url(assets/images/coffeeshops/coffee2.jpg) no-repeat center"><h6>Thon Hotel Rosenkrantz Oslo</h6><br><p>Rosenkrantz gate 1</p></div>',
       },
-    ];*/
+      {
+        coords: { lat: 59.9136725, lng: 10.7774321 },
+        content:
+          '<div class="marker" style="background: url(assets/images/coffeeshops/coffee1.jpg) no-repeat center"><h6>Central City Apartments</h6><br><p>Kjølberggata 29C</p></div>',
+      },
+      {
+        coords: { lat: 59.9092528, lng: 10.7666435 },
+        content:
+          '<div class="marker" style="background: url(assets/images/coffeeshops/coffee4.jpg) no-repeat center"><h6>Center rooms</h6><br><p>Schweigaards gate 44</p></div>',
+      },
+      {
+        coords: { lat: 59.9103456, lng: 10.7472907 },
+        content:
+          '<div class="marker" style="background: url(assets/images/coffeeshops/coffee5.jpg) no-repeat center"><h6>Citybox Oslo</h6><br><p>Prinsens gate 6</p></div>',
+      },
+      {
+        coords: { lat: 59.9106631, lng: 10.748712 },
+        content:
+          '<div class="marker" style="background: url(assets/images/coffeeshops/coffee6.jpg) no-repeat center"><h6>Comfort Hotel Xpress</h6><br><p>Fred Olsens gate 11</p></div>',
+      },
+      {
+        coords: { lat: 59.9144276, lng: 10.7421132 },
+        content:
+          '<div class="marker" style="background: url(assets/images/coffeeshops/coffee7.jpg) no-repeat center"><h6>P-Hotel Oslo</h6><br><p>Grensen 19</p></div>',
+      },
+      {
+        coords: { lat: 59.9100318, lng: 10.741466 },
+        content:
+          '<div class="marker" style="background: url(assets/images/coffeeshops/coffee8.jpg) no-repeat center"><h6>My ugly baby</h6><br><p>Youngs gate 9</p></div>',
+      },
+      {
+        coords: { lat: 59.9164346, lng: 10.749522 },
+        content:
+          '<div class="marker" style="background: url(assets/images/coffeeshops/coffee9.jpg) no-repeat center"><h6>Comfort Hotel Xpress Youngstorget</h6><br><p>Møllergata 26</p></div>',
+      },
+      {
+        coords: { lat: 59.9118434, lng: 10.7461162 },
+        content:
+          '<div class="marker" style="background: url(assets/images/coffeeshops/coffee10.jpg) no-repeat center"><h6>Comfort Hotel Karl Johan</h6><br><p>Karl Johans gate 12</p></div>',
+      },
+      ];
 
-  // var iconBase = "https://www.w3schools.com/icons/google_icons_maps.asp";
+     //Loop Through Markers
+    for (var i = 0; i < accomodationMarkers.length; i++) {
+      //Add Marker
+      addMarker(accomodationMarkers[i]);
+    }
 
-  /*var icons = {
-      restaurant: {
-        icon: iconBase + "parking_lot_maps.png",
-      },
-      library: {
-        icon: iconBase + "library_maps.png",
-      },
-      info: {
-        icon: iconBase + "info-i_maps.png",
-      },
-    };*/
-
-  //markers
-  /*for (var i = 0; i < restaurantLocations.length; i++) {
+    //Add Marker Function
+    function addMarker(props) {
       var marker = new google.maps.Marker({
-        position: restaurantLocations[i].position,
-        icon: icons[restaurantLocations[i].type].icon,
+        position: props.coords,
         map: map,
+        icon: "https://img.icons8.com/office/40/000000/marker.png",
       });
-    }*/
-}
+      if (props.content) {
+        var infowindow = new google.maps.InfoWindow({
+          content: props.content,
+        });
 
-/*function initMap() {
-  var map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 13,
-    center: {
-      lat: 59.911491,
-      lng: 10.757933,
-    },
-  });
-}
-
-//My Locations
-
-function myRestaurantLocation() {
-  var map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 13,
-    center: {
-      lat: 59.911491,
-      lng: 10.757933,
-    },
-  });
-
-  var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
-
-  //restaurant locations
-
-  var locations = [
-    {//Den Glade Gris
-      lat: 59.9178541,
-      lng: 10.7339675,
-    },
-    {//Rorbua Aker Brygge
-      lat: 59.9088001,
-      lng: 10.7247294,
-    },
-    {//Maaemo
-      lat: 59.9075576,
-      lng: 10.758191,
-    },
-    {// Sofies mat og vinhus
-      lat: 59.9226899,
-      lng: 10.7356068,
-    },
-    {// Restaurant Fjord
-      lat: 59.9167545,
-      lng: 10.7377502,
-    },
-    {// Rest
-      lat: 59.9091625,
-      lng: 10.7422209,
-    },
-    {// Arakataka
-      lat: 59.9163672,
-      lng: 10.7506229,
-    },
-    {// Elias mat & sånt
-      lat: 59.9163238,
-      lng: 10.7387246,
-    },
-    {// Restaurant Kontrast
-      lat: 59.9229418,
-      lng: 10.7511292,
-    },
-    {// Hos Thea
-      lat: 59.912725,
-      lng: 10.7093833,
+        marker.addListener("click", function () {
+          infowindow.open(map, marker);
+        });
+      }
     }
-  ];
-
-  var markers = locations.map(function (location, i) {
-    return new google.maps.Marker({
-      position: location,
-      label: labels[i % labels.length],
-    });
   });
 
-  var markerCluster = new MarkerClusterer(map, markers, {
-    imagePath:
-      "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
-  });
+  
+
+  
 }
-function myCoffeeLocation() {
+
+
+
+
+
+/*function myAccomodationLocation() {
   var map = new google.maps.Map(document.getElementById("map"), {
     zoom: 10,
     center: {
@@ -308,116 +294,10 @@ function myCoffeeLocation() {
 
   var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
 
-  //coffee shops locations
-
-  var locations = [
-    {//Espresso House
-      lat: 59.9087961,
-      lng: 10.7578227,
+  
+    {
     },
-    {//Starbucks
-      lat: 59.9111736,
-      lng: 10.7530403,
-    },
-    {//Tim Wendelboe
-      lat: 59.9233709,
-      lng: 10.7556998,
-    },
-    {// Fuglen
-      lat: 59.9172303,
-      lng: 10.7397703,
-    },
-    {// Stockfleths
-      lat: 59.9121364,
-      lng: 10.7486613,
-    },
-    {// Hendrix Ibsen
-      lat: 59.9220352,
-      lng: 10.7512782,
-    },
-    {// Supreme Roastworks AS
-      lat: 59.9280583,
-      lng: 10.7592917,
-    },
-    {// My ugly baby
-      lat: 59.9149799,
-      lng: 10.7504415,
-    },
-    {// Java espresso
-      lat: 59.9243908,
-      lng: 10.7396507,
-    },
-    {// Kaffebrenneriet
-      lat: 59.9187663,
-      lng: 10.7574981,
-    }
-  ];
-
-  var markers = locations.map(function (location, i) {
-    return new google.maps.Marker({
-      position: location,
-      label: labels[i % labels.length],
-    });
-  });
-
-  var markerCluster = new MarkerClusterer(map, markers, {
-    imagePath:
-      "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
-  });
-}
-function myAccomodationLocation() {
-  var map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 10,
-    center: {
-      lat: 59.911491,
-      lng: 10.757933,
-    },
-  });
-
-  var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
-
-  //coffee shops locations
-
-  var locations = [
-    {//Saga Hotel Oslo Central
-      lat: 59.9100318,
-      lng: 10.741466,
-    },
-    {//Thon Hotel Rosenkrantz Oslo
-      lat: 59.9156194,
-      lng: 10.7404806,
-    },
-    {//Central City Apartments
-      lat: 59.9136725,
-      lng: 10.7774321,
-    },
-    {// Center rooms
-      lat: 59.9092528,
-      lng: 10.7666435,
-    },
-    {// Citybox Oslo
-      lat: 59.9103456,
-      lng: 10.7472907,
-    },
-    {// Comfort Hotel Xpress Central Station
-      lat: 59.9106631,
-      lng: 10.748712,
-    },
-    {// P-Hotel Oslo
-      lat: 59.9144276,
-      lng: 10.7421132,
-    },
-    {// Saga Hotel Oslo Central
-      lat: 59.9100318,
-      lng: 10.741466,
-    },
-    {// Comfort Hotel Xpress Youngstorget
-      lat: 59.9164346,
-      lng: 10.749522,
-    },
-    {// Comfort Hotel Karl Johan
-      lat: 59.9118434,
-      lng: 10.7461162,
+    {
     }
   ];
 
