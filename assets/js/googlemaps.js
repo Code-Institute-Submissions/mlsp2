@@ -100,52 +100,52 @@ function initMap() {
       {
         coords: { lat: 59.9141009, lng: 10.7528633 },
         content:
-          '<div class="marker" style="background: url(assets/images/restaurant1.jpg) no-repeat center"><h6>Espresso House</h6><br><p>Gunerius, Storgata 32</p></div>',
+          '<div class="marker" style="background: url(assets/images/coffeeshops/coffee3.jpg) no-repeat center"><h6>Espresso House</h6><br><p>Gunerius, Storgata 32</p></div>',
       },
       {
         coords: { lat: 59.9097227, lng: 10.7266688 },
         content:
-          '<div class="marker" style="background: url(assets/images/restaurant1.jpg) no-repeat center"><h6>Starbucks</h6><br><p>Stranden 7</p></div>',
+          '<div class="marker" style="background: url(assets/images/coffeeshops/coffee2.jpg) no-repeat center"><h6>Starbucks</h6><br><p>Stranden 7</p></div>',
       },
       {
         coords: { lat: 59.9233709, lng: 10.7556998 },
         content:
-          '<div class="marker" style="background: url(assets/images/restaurant1.jpg) no-repeat center"><h6>Tim Wendelboe</h6><br><p>Grüners gate 1</p></div>',
+          '<div class="marker" style="background: url(assets/images/coffeeshops/coffee1.jpg) no-repeat center"><h6>Tim Wendelboe</h6><br><p>Grüners gate 1</p></div>',
       },
       {
         coords: { lat: 59.9172303, lng: 10.7397703, },
         content:
-          '<div class="marker" style="background: url(assets/images/restaurant1.jpg) no-repeat center"><h6>Fuglen</h6><br><p>Universitetsgata 2</p></div>',
+          '<div class="marker" style="background: url(assets/images/coffeeshops/coffee4.jpg) no-repeat center"><h6>Fuglen</h6><br><p>Universitetsgata 2</p></div>',
       },
       {
         coords: { lat: 59.9231622, lng: 10.7260787 },
         content:
-          '<div class="marker" style="background: url(assets/images/restaurant1.jpg) no-repeat center"><h6>Stockfleths</h6><br><p>Josefines gate 23</p></div>',
+          '<div class="marker" style="background: url(assets/images/coffeeshops/coffee5.jpg) no-repeat center"><h6>Stockfleths</h6><br><p>Josefines gate 23</p></div>',
       },
       {
         coords: { lat: 59.9220352, lng: 10.7512782 },
         content:
-          '<div class="marker" style="background: url(assets/images/restaurant1.jpg) no-repeat center"><h6>Hendrix Ibsen</h6><br><p>Vulkan 22</p></div>',
+          '<div class="marker" style="background: url(assets/images/coffeeshops/coffee6.jpg) no-repeat center"><h6>Hendrix Ibsen</h6><br><p>Vulkan 22</p></div>',
       },
       {
         coords: { lat: 59.9280583, lng: 10.7592917 },
         content:
-          '<div class="marker" style="background: url(assets/images/restaurant1.jpg) no-repeat center"><h6>Supreme Roastworks AS</h6><br><p>Thorvald Meyers gate 18A</p></div>',
+          '<div class="marker" style="background: url(assets/images/coffeeshops/coffee7.jpg) no-repeat center"><h6>Supreme Roastworks AS</h6><br><p>Thorvald Meyers gate 18A</p></div>',
       },
       {
         coords: { lat: 59.9149799, lng: 10.7504415 },
         content:
-          '<div class="marker" style="background: url(assets/images/restaurant1.jpg) no-repeat center"><h6>My ugly baby</h6><br><p>Youngs gate 9</p></div>',
+          '<div class="marker" style="background: url(assets/images/coffeeshops/coffee8.jpg) no-repeat center"><h6>My ugly baby</h6><br><p>Youngs gate 9</p></div>',
       },
       {
         coords: { lat: 59.9243908, lng: 10.7396507 },
         content:
-          '<div class="marker" style="background: url(assets/images/restaurant1.jpg) no-repeat center"><h6>Java espresso</h6><br><p>Ullevålsveien 47</p></div>',
+          '<div class="marker" style="background: url(assets/images/coffeeshops/coffee9.jpg) no-repeat center"><h6>Java espresso</h6><br><p>Ullevålsveien 47</p></div>',
       },
       {
         coords: { lat: 59.9207398, lng: 10.728077 },
         content:
-          '<div class="marker" style="background: url(assets/images/restaurant1.jpg) no-repeat center"><h6>Kaffebrenneriet</h6><br><p>Parkveien 25</p></div>',
+          '<div class="marker" style="background: url(assets/images/coffeeshops/coffee10.jpg) no-repeat center"><h6>Kaffebrenneriet</h6><br><p>Parkveien 25</p></div>',
       },
       ];
 
