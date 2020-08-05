@@ -289,23 +289,19 @@ h2 {
 }
 
 .map-button{
+    font-family: lato;
     width: 150px;
-    text-align: center;
-    float: left;
     border-style: solid;
     background-color: #ffa083;
     position: relative;
     margin-left: 10px;
-    top: 13%;
-    left: 1%;
-    z-index: 10;
     border-color: #ffa083;
     color: white;
     font-weight: bold;
     border-radius: 23px;
-    padding: .5rem 1rem;
+    padding: 5px;
+    letter-spacing: 1px;
     font-size: 15px;
-    line-height: 1.5;
     text-transform: uppercase;
 
     transition: all 0.35s ease-in-out;
@@ -325,7 +321,6 @@ h2 {
     padding: 5px;
     position: absolute;
     top: 11%;
-    width: 100%;
 }
 
 button:focus{
