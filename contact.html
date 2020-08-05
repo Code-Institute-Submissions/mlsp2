@@ -21,14 +21,13 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
 
-    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
-    <script type="text/javascript">
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"
+    ></script>
+     <script type="text/javascript">
         (function() {
             emailjs.init("user_x4AcYYP1viXXa3bLWvnLW");
-            emailjs.send("gmail", "yourjourney", {
-                name: "Aaron",
-                notes: "The project that I want is..."
-            })
         })();
     </script>
 </head>
@@ -73,7 +72,7 @@
                 </div>
 
                 <!-- Start Form Section-->
-                    <form id="testform">
+                    <form id="testform" onsubmit="return sendMail(this);">
                         <div class="box">
                             <label for="fullname" class="form-tag">Name</label>
                             <input type="text" name="name" id="fullname" class="form-control" required/>
@@ -121,5 +120,6 @@
     </div>
 	<!--End Contact Seccion-->
     <script src="assets/js/modal.js"></script>
+    <script src="assets/js/sendEmail.js"></script>
 </body>
 </html>
