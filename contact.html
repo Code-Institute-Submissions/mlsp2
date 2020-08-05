@@ -20,6 +20,17 @@
 	<script src="https://kit.fontawesome.com/37ae921784.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_x4AcYYP1viXXa3bLWvnLW");
+            emailjs.send("gmail", "yourjourney", {
+                name: "Aaron",
+                notes: "The project that I want is..."
+            })
+        })();
+    </script>
 </head>
 <body data-spy="scroll" data-target="#responsiveNavBar">
     <!--Start Contact Seccion-->
