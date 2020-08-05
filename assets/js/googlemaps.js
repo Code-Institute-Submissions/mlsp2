@@ -538,3 +538,7 @@ function initMap() {
     }
   });
 }
+
+$("#register").on('click', function(){
+     window.location = "contact.html";    
+});

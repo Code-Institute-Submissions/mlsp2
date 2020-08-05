@@ -361,6 +361,16 @@ h6 {
     margin-bottom: 10px;
 }
 
+#register{
+    background-color: white;
+    color: #ffa083;
+    border-color: white;
+}
+
+#register:hover{
+    border: 2px solid #ffa083;
+}
+
 /* ----------------------------------------------- Explore Page End --- */
 
 /* ----------------------------------------------- Gallery Page Start --- */
