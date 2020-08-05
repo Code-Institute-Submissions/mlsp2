@@ -34,7 +34,6 @@ $("#submit").click(function(){
             document.createElement('form').submit.call(document.forms['testform'])
             }, 2500);
             
-        $('#testForm').submit();
-        
+        $('#testForm').submit(); 
     };
 });
