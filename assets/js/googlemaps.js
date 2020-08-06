@@ -12,7 +12,7 @@ function initMap() {
 
   // The  Restaurant Locations
 
-  $("#restaurants").click(function () {
+  $("#restaurants, .fa-utensils").click(function () {
        var oslo = { lat: 59.9160454, lng: 10.7362453 };
        var map = new google.maps.Map(document.getElementById("map"), {
             zoom: 14,
@@ -100,7 +100,7 @@ function initMap() {
 
     // The  CoffeeShop Locations 
 
-  $("#coffeeshops").click(function () {
+  $("#coffeeshops, .fa-coffee").click(function () {
       var oslo = { lat: 59.9211046, lng: 10.7427449 };
        var map = new google.maps.Map(document.getElementById("map"), {
             zoom: 14,
@@ -188,7 +188,7 @@ function initMap() {
 
     // The  Accomodation Locations 
     
-  $("#accomodation").click(function () {
+  $("#accomodation, .fa-bed").click(function () {
       var oslo = { lat: 59.9132002, lng: 10.7533018 };
        var map = new google.maps.Map(document.getElementById("map"), {
             zoom: 15,
@@ -276,7 +276,7 @@ function initMap() {
 
     // The Activities Locations
 
-  $("#activities").click(function () {
+  $("#activities, .fa-snowboarding").click(function () {
       var oslo = { lat: 59.9114009, lng: 10.7483125 };
        var map = new google.maps.Map(document.getElementById("map"), {
             zoom: 14,
@@ -364,7 +364,7 @@ function initMap() {
 
     // The Parks Locations
 
-  $("#parks").click(function () {
+  $("#parks, .fa-tree").click(function () {
       var oslo = { lat: 59.9177345, lng: 10.7370972 };
        var map = new google.maps.Map(document.getElementById("map"), {
             zoom: 13,
@@ -452,7 +452,7 @@ function initMap() {
 
     // The Bars Locations
   
-  $("#bars").click(function () {
+  $("#bars, .fa-glass-martini-alt").click(function () {
       var oslo = { lat: 59.9193175, lng: 10.7543608 };
        var map = new google.maps.Map(document.getElementById("map"), {
             zoom: 14,
