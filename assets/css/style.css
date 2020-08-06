@@ -439,7 +439,7 @@ img{
     text-transform: uppercase;
 }
 
-h2{
+h3{
     font-size: 60px;
     font-weight: 700;
     display: block;
@@ -602,78 +602,22 @@ div .button .btn-light:hover{
         margin-top: 80%;
     }
 
-    .packages-img{
-        height: 130vh;
+    .caption-contact h3{
+        font-size: 30px;
+        width: 90%;
     }
 
-    .circle-container{
-        top: 20%;
+    .box{
+        width: 80%;
+        bottom: 15%;
+        height: 50%;
     }
 
-    .left{
-        width: 150px;
-        height: 150px;
-        float: none;
-        margin: 0 auto;
-    }
+}
 
-    .beach{
-        background: url(../images/beach.jpg) no-repeat center;
-        background-size: 300px;
-    }
-
-    .small-circle-left{
-        top: 20%;
-        left: 60%;
-    }
-
-    .heading-services{
-        font-size: 17px;
-    }
-
-    .description{
-        display: none;
-    }
-
-    .container-right{
-        top: 89%;
-    }
-
-    .right{
-        width: 150px;
-        height: 150px;
-        float: none;
-        margin: 0 auto;
-    }
-
-    .mountain{
-        background: url(../images/hiking.jpg) no-repeat center;
-        background-size: 300px;
-    }
-
-    .small-circle-right{
-        top: 89%;
-        left: 60%;
-    }
-
-    .container-middle{
-        top: 55%;
-    }
-
-    .middle{
-        width: 150px;
-        height: 150px;
-        float: none;
-    }
-
-    .forest{
-        background: url(../images/forest.jpg) no-repeat center bottom;
-        background-size: 150px;
-    }
-
-    .small-circle-middle{
-        top: 55%;
-        left: 60%;
+@media (max-height:600px){
+    .caption-contact h3{
+        font-size: 20px;
     }
 }
 
@@ -700,6 +644,8 @@ div .button .btn-light:hover{
     .caption-about .btn {
     margin-top: 100%;
     }
+
+    
 
 }
 
@@ -776,6 +722,29 @@ div .button .btn-light:hover{
 
     .caption-about .btn{
         margin-top: 50%;
+    }
+
+    .caption-contact h3{
+        width: 80%;
+    }
+
+    .box{
+        width: 80%;
+        height: 45%;
+        top: 36%;
+    }
+
+    .form-tag{
+        font-size: 35px;
+        padding-top: 30px;
+    }
+
+    .form-control{
+        height: 60px;
+    }
+
+    .btn-lg{
+        font-size: 30px;
     }
 
 }
