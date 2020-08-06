@@ -430,17 +430,38 @@ img{
   position: relative;
 }
 
-.box{
-    background-color: rgba(255, 255, 255, .9);
-    height: 400px;
-    width: 36%;
+.caption-contact{
+    width: 100%;
     position: absolute;
-    right: 0px;
-    margin-right: 60px;
-    bottom: 5%;
-    font-size: 30px;
+    top: 20%;
+    z-index: 1;
+    color: white;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 60px;
     font-weight: 700;
     display: block;
+    font-family: "Varela Round", sans-serif;
+    margin-bottom: 10px;
+    text-align: center;
+    margin: 0 auto;
+    width: 60%;
+    left: 0;
+}
+
+.form-container{
+    width: 30%;
+}
+
+.box{
+    background-color: rgba(255, 255, 255, .9);
+    height: 300px;
+    width: 36%;
+    position: absolute;
+    bottom: 10%;
+    font-size: 30px;
     font-family: "Varela Round", sans-serif;
     margin-bottom: 10px;
     text-align: center;
@@ -448,7 +469,6 @@ img{
 }
 
 .form-tag{
-    padding-top: 40px;
     text-align: left;
     padding-left: 3px;
     max-width: 90%;
@@ -470,7 +490,7 @@ img{
 }
 
 div .button{
-    margin-top: 70px;
+    margin-top: 40px;
 }
 
 div .button .btn-light:hover{
@@ -519,14 +539,6 @@ div .button .btn-light:hover{
     right: 20px;
     font-weight: bold;
     cursor: pointer;
-}
-
-.contact-img .social-links{
-    position: absolute;
-    left: 0px;
-    margin-left: 30px;
-    bottom: 0;
-    font-size: 20px;
 }
 /* ----------------------------------------------- Contact Page End --- */
 
