@@ -529,6 +529,7 @@ div .button .btn-light:hover{
     }
 
     .caption h3 {
+    width: 100%;
     font-size: 13px;
     max-width: 70%;
     margin-left: 25px;
@@ -558,13 +559,13 @@ div .button .btn-light:hover{
     }
 
     .caption-about p{
-        width: 80%;
+        width: 85%;
         margin-right: 25px;
 
     }
 
     .caption-about .btn{
-        margin-top: 80%;
+        margin-top: 85%;
     }
 
     #map{
@@ -644,7 +645,7 @@ div .button .btn-light:hover{
     }
 
     .caption-about .btn {
-    margin-top: 100%;
+    margin-top: 10%;
     }
 
     
@@ -667,7 +668,7 @@ div .button .btn-light:hover{
 
     .caption h1{
         width: 90%;
-        font-size: 80px;
+        font-size: 60px;
     }
 
     hr{
@@ -676,6 +677,7 @@ div .button .btn-light:hover{
     }
 
     .caption h3{
+        width: 80%;
         font-size: 30px;
         margin-bottom: 100px;
     }
@@ -723,7 +725,7 @@ div .button .btn-light:hover{
     }
 
     .caption-about .btn{
-        margin-top: 50%;
+        margin-top: 10%;
     }
 
     #map{
