@@ -539,6 +539,6 @@ function initMap() {
   });
 }
 
-$("#register").on('click', function(){
+$("#register, .fa-key").on('click', function(){
      window.location = "contact.html";    
 });
