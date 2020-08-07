@@ -376,52 +376,52 @@ function initMap() {
       {
         coords: { lat: 59.9264583, lng: 10.7034734 },
         content:
-          '<div class="marker" style="background: url(assets/images/parks/parks1.jpg) no-repeat center"><h6>Frognerparken</h6><br><p>Kirkeveien</p></div>',
+          '<a href="https://www.oslo.kommune.no/natur-kultur-og-fritid/tur-og-friluftsliv/parker-og-friomrader/frognerparken/#gref" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/parks/parks1.jpg) no-repeat center"><h6>Frognerparken</h6><br><p>Kirkeveien</p></div></a>',
       },
       {
         coords: { lat: 59.917625, lng: 10.730332 },
         content:
-          '<div class="marker" style="background: url(assets/images/parks/parks2.jpg) no-repeat center"><h6>Slottsparken</h6><br><p>Slottsplassen 1</p></div>',
+          '<a href="https://www.kongehuset.no/seksjon.html?tid=99668&sek=99667&fbclid=IwAR0oobPkeuoqOvQS126uvX4N8-uNsBOqvkz0xk6zmbOH7dbXSbEAVlJZjtU" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/parks/parks2.jpg) no-repeat center"><h6>Slottsparken</h6><br><p>Slottsplassen 1</p></div></a>',
       },
       {
         coords: { lat: 59.927029, lng: 10.700865 },
         content:
-          '<div class="marker" style="background: url(assets/images/parks/parks3.jpg) no-repeat center"><h6>Vigelandsparken</h6><br><p>Nobels gate 32</p></div>',
+          '<a href="http://www.storbyinfo.dk/vigelandsparken-oslo/" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/parks/parks3.jpg) no-repeat center"><h6>Vigelandsparken</h6><br><p>Nobels gate 32</p></div></a>',
       },
       {
         coords: { lat: 59.8995816, lng: 10.7611578 },
         content:
-          '<div class="marker" style="background: url(assets/images/parks/parks4.jpg) no-repeat center"><h6>Ekebergparken Skulpturpark</h6><br><p>Kongsveien 15</p></div>',
+          '<a href="https://ekebergparken.com/" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/parks/parks4.jpg) no-repeat center"><h6>Ekebergparken Skulpturpark</h6><br><p>Kongsveien 15</p></div></a>',
       },
       {
         coords: { lat: 59.9063176, lng: 10.7217175 },
         content:
-          '<div class="marker" style="background: url(assets/images/parks/parks5.jpg) no-repeat center"><h6>Tjuvholmen Sculpture Park</h6><br><p>Strandpromenaden 2</p></div>',
+          '<a href="https://www.tjuvholmen.no/" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/parks/parks5.jpg) no-repeat center"><h6>Tjuvholmen Sculpture Park</h6><br><p>Strandpromenaden 2</p></div></a>',
       },
       {
         coords: { lat: 59.9230071, lng: 10.764023 },
         content:
-          '<div class="marker" style="background: url(assets/images/parks/parks6.jpg) no-repeat center"><h6>Sofienberg Park</h6><br><p>Sofienberggata 14</p></div>',
+          '<a href="oslo.kommune.no/natur-kultur-og-fritid/tur-og-friluftsliv/parker-og-friomrader/sofienbergparken/#gref" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/parks/parks6.jpg) no-repeat center"><h6>Sofienberg Park</h6><br><p>Sofienberggata 14</p></div></a>',
       },
       {
         coords: { lat: 59.9047091, lng: 10.7625675 },
         content:
-          '<div class="marker" style="background: url(assets/images/parks/parks7.jpg) no-repeat center"><h6>Middelalderparken</h6><br><p>Sørenga 5</p></div>',
+          '<a href="https://www.middelalder.no/middelalderbyen-i-dag/middelalderparken" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/parks/parks7.jpg) no-repeat center"><h6>Middelalderparken</h6><br><p>Sørenga 5</p></div></a>',
       },
       {
         coords: { lat: 59.9171009, lng: 10.7772202 },
         content:
-          '<div class="marker" style="background: url(assets/images/parks/parks8.jpg) no-repeat center"><h6>Tøyen Park</h6><br><p>Helgesens gate 90</p></div>',
+          '<a href="https://www.oslo.kommune.no/natur-kultur-og-fritid/tur-og-friluftsliv/parker-og-friomrader/toyen-kulturpark/#gref" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/parks/parks8.jpg) no-repeat center"><h6>Tøyen Park</h6><br><p>Helgesens gate 90</p></div></a>',
       },
       {
         coords: { lat: 59.9147141, lng: 10.734458 },
         content:
-          '<div class="marker" style="background: url(assets/images/parks/parks9.jpg) no-repeat center"><h6>Studenterlunden Park</h6><br><p>Johanne Dybwads plass</p></div>',
+          '<a href="https://www.inspirock.com/norway/oslo/studenterlunden-park-a8408216787" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/parks/parks9.jpg) no-repeat center"><h6>Studenterlunden Park</h6><br><p>Johanne Dybwads plass</p></div></a>',
       },
       {
         coords: { lat: 59.9131819, lng: 10.7570827 },
         content:
-          '<div class="marker" style="background: url(assets/images/parks/parks10.jpg) no-repeat center"><h6>Vaterlandsparken</h6><br><p>0186 Oslo</p></div>',
+          '<a href="https://www.oslo.kommune.no/natur-kultur-og-fritid/tur-og-friluftsliv/parker-og-friomrader/vaterlandsparken/#gref" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/parks/parks10.jpg) no-repeat center"><h6>Vaterlandsparken</h6><br><p>0186 Oslo</p></div></a>',
       },
       ];
 
@@ -464,52 +464,52 @@ function initMap() {
       {
         coords: { lat: 59.9136839, lng: 10.7399639 },
         content:
-          '<a href="https://operaen.no/" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/bars/bar1.jpg) no-repeat center"><h6>Eight</h6><br><p>Karl Johans gate 27</p></div></a>',
+          '<a href="https://www.grand.no/no/restaurantandbar/eight-rooftop-bar.html" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/bars/bar1.jpg) no-repeat center"><h6>Eight</h6><br><p>Karl Johans gate 27</p></div></a>',
       },
       {
         coords: { lat: 59.9139799, lng: 10.7487005 },
         content:
-          '<a href="https://operaen.no/" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/bars/bar2.jpg) no-repeat center"><h6>Angst</h6><br><p>Torggata 11</p></div></a>',
+          '<a href="https://www.visitoslo.com/no/produkt/?TLp=840827&Angst-Bar=" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/bars/bar2.jpg) no-repeat center"><h6>Angst</h6><br><p>Torggata 11</p></div></a>',
       },
       {
         coords: { lat: 59.9154592, lng: 10.737899 },
         content:
-          '<a href="https://operaen.no/" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/bars/bar3.jpg) no-repeat center"><h6>Magic Ice Bar</h6><br><p>Kristian IVs gate 12</p></div></a>',
+          '<a href="https://www.magicice.no/locations/oslo/" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/bars/bar3.jpg) no-repeat center"><h6>Magic Ice Bar</h6><br><p>Kristian IVs gate 12</p></div></a>',
       },
       {
         coords: { lat: 59.9140704, lng: 10.7514605 },
         content:
-          '<a href="https://operaen.no/" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/bars/bar4.jpg) no-repeat center"><h6>HIMKOK Storgata Destilleri</h6><br><p>Storgata 27</p></div></a>',
+          '<a href="https://www.himkok.no/" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/bars/bar4.jpg) no-repeat center"><h6>HIMKOK Storgata Destilleri</h6><br><p>Storgata 27</p></div></a>',
       },
       {
         coords: { lat: 59.9248815, lng: 10.7594508 },
         content:
-          '<a href="https://operaen.no/" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/bars/bar5.jpg) no-repeat center"><h6>Aku-Aku Tiki Bar</h6><br><p>Thorvald Meyers gate 32</p></div></a>',
+          '<a href="http://www.akuaku.no/" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/bars/bar5.jpg) no-repeat center"><h6>Aku-Aku Tiki Bar</h6><br><p>Thorvald Meyers gate 32</p></div></a>',
       },
       {
         coords: { lat: 59.9147255, lng: 10.7365552 },
         content:
-          '<a href="https://operaen.no/" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/bars/bar6.jpg) no-repeat center"><h6>Last Train</h6><br><p>Karl Johans gate 45</p></div></a>',
+          '<a href="http://www.lasttrain.no/" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/bars/bar6.jpg) no-repeat center"><h6>Last Train</h6><br><p>Karl Johans gate 45</p></div></a>',
       },
       {
         coords: { lat: 59.9171972, lng: 10.7534148 },
         content:
-          '<a href="https://operaen.no/" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/bars/bar7.jpg) no-repeat center"><h6> Crow Bar & Brewery</h6><br><p>Torggata 32</p></div></a>',
+          '<a href="http://crowbryggeri.com/" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/bars/bar7.jpg) no-repeat center"><h6>Crow Bar & Brewery</h6><br><p>Torggata 32</p></div></a>',
       },
       {
         coords: { lat: 59.9140818, lng: 10.7552122 },
         content:
-          '<a href="https://operaen.no/" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/bars/bar8.jpg) no-repeat center"><h6>Brewgata</h6><br><p>Brugata 5</p></div></a>',
+          '<a href="brewgata.no" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/bars/bar8.jpg) no-repeat center"><h6>Brewgata</h6><br><p>Brugata 5</p></div></a>',
       },
       {
         coords: { lat: 59.9254338, lng: 10.759332 },
         content:
-          '<a href="https://operaen.no/" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/bars/bar9.jpg) no-repeat center"><h6>Bar Boca</h6><br><p>Thorvald Meyers gate 30</p></div></a>',
+          '<a href="https://www.tripadvisor.com.br/Restaurant_Review-g190479-d3387831-Reviews-Bar_Boca-Oslo_Eastern_Norway.html" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/bars/bar9.jpg) no-repeat center"><h6>Bar Boca</h6><br><p>Thorvald Meyers gate 30</p></div></a>',
       },
       {
         coords: { lat: 59.9187185, lng: 10.7339001 },
         content:
-          '<a href="https://operaen.no/" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/bars/bar10.jpg) no-repeat center"><h6>Summit Bar</h6><br><p>Holbergs gate 30</p></div></a>',
+          '<a href="https://www.radissonhotels.com/no-no/varemerke/radisson-blu" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/bars/bar10.jpg) no-repeat center"><h6>Summit Bar</h6><br><p>Holbergs gate 30</p></div></a>',
       },
       ];
 
