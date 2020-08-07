@@ -376,52 +376,52 @@ function initMap() {
       {
         coords: { lat: 59.9264583, lng: 10.7034734 },
         content:
-          '<a href="https://www.oslo.kommune.no/natur-kultur-og-fritid/tur-og-friluftsliv/parker-og-friomrader/frognerparken/#gref" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/parks/parks1.jpg) no-repeat center"><h6>Frognerparken</h6><br><p>Kirkeveien</p></div></a>',
+          '<a href="https://www.oslo.kommune.no/natur-kultur-og-fritid/tur-og-friluftsliv/parker-og-friomrader/frognerparken/#gref" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/parks/park1.jpg) no-repeat center"><h6>Frognerparken</h6><br><p>Kirkeveien</p></div></a>',
       },
       {
         coords: { lat: 59.917625, lng: 10.730332 },
         content:
-          '<a href="https://www.kongehuset.no/seksjon.html?tid=99668&sek=99667&fbclid=IwAR0oobPkeuoqOvQS126uvX4N8-uNsBOqvkz0xk6zmbOH7dbXSbEAVlJZjtU" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/parks/parks2.jpg) no-repeat center"><h6>Slottsparken</h6><br><p>Slottsplassen 1</p></div></a>',
+          '<a href="https://www.kongehuset.no/seksjon.html?tid=99668&sek=99667&fbclid=IwAR0oobPkeuoqOvQS126uvX4N8-uNsBOqvkz0xk6zmbOH7dbXSbEAVlJZjtU" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/parks/park2.jpg) no-repeat center"><h6>Slottsparken</h6><br><p>Slottsplassen 1</p></div></a>',
       },
       {
         coords: { lat: 59.927029, lng: 10.700865 },
         content:
-          '<a href="http://www.storbyinfo.dk/vigelandsparken-oslo/" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/parks/parks3.jpg) no-repeat center"><h6>Vigelandsparken</h6><br><p>Nobels gate 32</p></div></a>',
+          '<a href="http://www.storbyinfo.dk/vigelandsparken-oslo/" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/parks/park3.jpg) no-repeat center"><h6>Vigelandsparken</h6><br><p>Nobels gate 32</p></div></a>',
       },
       {
         coords: { lat: 59.8995816, lng: 10.7611578 },
         content:
-          '<a href="https://ekebergparken.com/" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/parks/parks4.jpg) no-repeat center"><h6>Ekebergparken Skulpturpark</h6><br><p>Kongsveien 15</p></div></a>',
+          '<a href="https://ekebergparken.com/" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/parks/park4.jpg) no-repeat center"><h6>Ekebergparken Skulpturpark</h6><br><p>Kongsveien 15</p></div></a>',
       },
       {
         coords: { lat: 59.9063176, lng: 10.7217175 },
         content:
-          '<a href="https://www.tjuvholmen.no/" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/parks/parks5.jpg) no-repeat center"><h6>Tjuvholmen Sculpture Park</h6><br><p>Strandpromenaden 2</p></div></a>',
+          '<a href="https://www.tjuvholmen.no/" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/parks/park5.jpg) no-repeat center"><h6>Tjuvholmen Sculpture Park</h6><br><p>Strandpromenaden 2</p></div></a>',
       },
       {
         coords: { lat: 59.9230071, lng: 10.764023 },
         content:
-          '<a href="oslo.kommune.no/natur-kultur-og-fritid/tur-og-friluftsliv/parker-og-friomrader/sofienbergparken/#gref" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/parks/parks6.jpg) no-repeat center"><h6>Sofienberg Park</h6><br><p>Sofienberggata 14</p></div></a>',
+          '<a href="oslo.kommune.no/natur-kultur-og-fritid/tur-og-friluftsliv/parker-og-friomrader/sofienbergparken/#gref" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/parks/park6.jpg) no-repeat center"><h6>Sofienberg Park</h6><br><p>Sofienberggata 14</p></div></a>',
       },
       {
         coords: { lat: 59.9047091, lng: 10.7625675 },
         content:
-          '<a href="https://www.middelalder.no/middelalderbyen-i-dag/middelalderparken" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/parks/parks7.jpg) no-repeat center"><h6>Middelalderparken</h6><br><p>Sørenga 5</p></div></a>',
+          '<a href="https://www.middelalder.no/middelalderbyen-i-dag/middelalderparken" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/parks/park7.jpg) no-repeat center"><h6>Middelalderparken</h6><br><p>Sørenga 5</p></div></a>',
       },
       {
         coords: { lat: 59.9171009, lng: 10.7772202 },
         content:
-          '<a href="https://www.oslo.kommune.no/natur-kultur-og-fritid/tur-og-friluftsliv/parker-og-friomrader/toyen-kulturpark/#gref" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/parks/parks8.jpg) no-repeat center"><h6>Tøyen Park</h6><br><p>Helgesens gate 90</p></div></a>',
+          '<a href="https://www.oslo.kommune.no/natur-kultur-og-fritid/tur-og-friluftsliv/parker-og-friomrader/toyen-kulturpark/#gref" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/parks/park8.jpg) no-repeat center"><h6>Tøyen Park</h6><br><p>Helgesens gate 90</p></div></a>',
       },
       {
         coords: { lat: 59.9147141, lng: 10.734458 },
         content:
-          '<a href="https://www.inspirock.com/norway/oslo/studenterlunden-park-a8408216787" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/parks/parks9.jpg) no-repeat center"><h6>Studenterlunden Park</h6><br><p>Johanne Dybwads plass</p></div></a>',
+          '<a href="https://www.inspirock.com/norway/oslo/studenterlunden-park-a8408216787" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/parks/park9.jpg) no-repeat center"><h6>Studenterlunden Park</h6><br><p>Johanne Dybwads plass</p></div></a>',
       },
       {
         coords: { lat: 59.9131819, lng: 10.7570827 },
         content:
-          '<a href="https://www.oslo.kommune.no/natur-kultur-og-fritid/tur-og-friluftsliv/parker-og-friomrader/vaterlandsparken/#gref" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/parks/parks10.jpg) no-repeat center"><h6>Vaterlandsparken</h6><br><p>0186 Oslo</p></div></a>',
+          '<a href="https://www.oslo.kommune.no/natur-kultur-og-fritid/tur-og-friluftsliv/parker-og-friomrader/vaterlandsparken/#gref" style="text-decoration:none;" target="_blank"><div class="marker" style="background: url(assets/images/parks/park10.jpg) no-repeat center"><h6>Vaterlandsparken</h6><br><p>0186 Oslo</p></div></a>',
       },
       ];
 
