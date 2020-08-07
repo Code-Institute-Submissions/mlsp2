@@ -61,3 +61,30 @@ As someone who doesn't like to waist time with giving to much detail, filling up
 ### User Story Five:
 
 It is also important that there is a confirmation of my submission.
+
+
+# Features
+
+### Existing Features
+
+- All the pages contain a navigation bar with the logo in the top corner left and the pages in the top center of the screen.
+
+- In order to ensure that the user first knows what the website has to offer the homepage contains a “Start” button, In the middle of the screen, that leads to the "About" page.
+- The “About” page provides a paragraph with information about what the website refers to and it contains a “Try it” button that will lead to the “Explore” page.
+- Once In the “Explore” page the user can browse and click on six different buttons with specific locations.
+- When a button is clicked, several markers appear in the map. 
+- When the user clicks on one of the markers, a pop-up window appears with the name of the location, a photo and the address.
+- If the user clicks on the pop-up window it will open a separate webpage of the specific location.
+- The "register" button leads the user to the "Contact" page.
+- The “Contact” page contains a small form, in order for the user to resgister if they wish to, and contact social media logos in the right side of the screen in case the user wants more information than the one that is given in the website.
+- If the user submites the form without filling it correctly, a pop-up window appears and suggestes that the user fills the form correctly.
+- When the user submits the form, a pop-up window appears confirming that it was successfully registered.
+- After successfully submitting the form, the owner of the website receives an email with the information that was filled in the form.
+
+### Features Left to Implement
+
+- In future versions of the website I would like to implement some video content and an image gallery in order to make the website more appealing and help the user see what the city has to provide in order to incentivate the user to register.
+- I would also like to implement a keyword search box in the nav bar so that if user's wish to search for something by name they can locate something as quick as possible.
+- I would also like to create a banner about new events or places that are or will be available.
+- I would also like to create a comment page so users can see how satisfied the previous users were with the company and the services provided.
+- I believe a Popup Chat Window would be a good way to make the website more efficient if the user needs more information.
