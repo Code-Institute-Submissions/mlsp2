@@ -100,3 +100,43 @@ It is also important that there is a confirmation of my submission.
   - The project uses the Bootstrap 4 grid and components in order to achieve a responsive layout and styling.
 - [Jquery (ver 3.4.1)](https://jquery.com/download/)
   - The project uses the Jquery in order to make it much easier to use JavaScript.
+
+
+# Testing
+
+**1. Logo:**
+
+   1. Go to a page that is not the homepage.
+   2. Try to click on the logo and verify that it leads you to the homepage.
+
+**2. Navigation Bar Pages:**
+
+   1. Go to the navigation bar.
+   2. Hover over the pages and verify that they change color individualy.
+   3. Try to click on them and verify that you are able to go to the page you selected.
+
+**3. Map:**
+
+   1. Go to the Explore page.
+   2. Hover over the buttons and verify that they change color.
+   3. Try to click on the six first buttons and verify that a number of markers appears in the map.
+   4. Try to click on the markers and verify that a pop-up window appears containing the name, address and image of the location.
+   5. Try to click on the pop-up window and verify that it opens the webpage of the location in a new window.
+   8. Try to close the pop-up window on the "X" and verify that it closes.
+   9. Try to click on another button and verify that the markers from the previous button are now replaced by the markers of the new one.
+   10. Try to click the last button, "register", and verify that it leads you to the "Contact" page.
+
+**4. Contact form:**
+
+   1. Go to the "Contact" page.
+   2. Try to submit the empty form and verify that an error message about the required fields appears.
+   3. Try to click on the empty field and verify that the auto-fill is available and when you click on it the name and email are automatically filled.
+   4. Try to submit the form without filling in one of the fields and verify that an error message about the required field appears.
+   5. Try to fill in the email address field without an "@", "." or a proper pattern in the email and verify that an error message appears explaining that an "@", "." or a valid email is missing and it suggests you should write it correctly.
+   6. Try to click on a field and verify that a shadow appears around it.
+   7. Try to submit the form, after filling up the fields correctly, and verify that a pop-up window appears confirming that the form was submitted.
+   8. When the form is submitted, open your email account and verify that you received an email with a submission (this will only happen if you are the owner of the website).
+
+**5. Social Media Icons:**
+   1. Hover over the social media icons and verify that they change color individualy.
+   2. Try to click on any social media icon and verify that it opens a new page.
