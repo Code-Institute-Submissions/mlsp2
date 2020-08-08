@@ -151,6 +151,8 @@ It is also important that there is a confirmation of my submission.
 
 - All HTML code was run through the [W3C HTML Validator](https://validator.w3.org/) and returned no errors.
 
+- The map appears as "for development purposes only" because I didn't make a billing account.
+
 
 # Deployment
 
@@ -186,3 +188,29 @@ The website is hosted via [GitHub](https://github.com/), with the source code be
     1. Make sure that you are logged in to your [GitHub account](https://github.com/).
 
     2. In the [project repository](https://github.com/gaspar91/mlsp2), click the small green button reading **gitpod** which is placed next to the **clone or download** button.
+
+
+# Credits
+
+### Content 
+
+ - The code for the **navigation bar** was duplicated from [Drew Ryan](https://www.youtube.com/watch?v=V_lAhqLXT9A)
+ - The code for the **google maps** was duplicated from [Google Maps](https://developers.google.com/maps/documentation/javascript/overview) and [Traversy Media](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA)
+ - The code for the **social media footer** was duplicated from [Code Institute's Love Running Project](https://github.com/Code-Institute-Org/love-running-rebuild)
+
+### Media
+
+The photos used in this website were obtained from [Unsplash](https://unsplash.com/)
+
+### Acknowledgements
+
+I received inspiration for this project from:
+
+- [Code Institute](https://codeinstitute.net/)
+- [Behance](https://www.behance.net/)
+- [ww3Schools](https://www.w3schools.com/)
+- [CSS Tricks](https://css-tricks.com/)
+- [Stack Overflow](https://stackoverflow.com/)
+- [Drew Ryan](https://www.youtube.com/watch?v=V_lAhqLXT9A) 
+- [Steve Tech](https://www.youtube.com/channel/UCTFnIr5A1hM9I4JcWBwPSvw)
+- [Traversy Media](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA)
