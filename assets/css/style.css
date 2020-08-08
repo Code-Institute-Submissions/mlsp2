@@ -71,7 +71,7 @@ body {
 
 .caption {
   width: 100%;
-    position: absolute;
+    /*position: absolute;*/
     top: 30%;
     z-index: 1;
     color: white;
@@ -513,8 +513,63 @@ div .button .btn-light:hover{
 
 /* -----------------------------------------------Media Queries --- */
 
-/*small screens (up to 576px)*/
+/*extra small screens (up to 540px)*/
 @media (max-width:576px){
+    .container{
+        max-width: auto;
+    }
+    .col-xs-4 {width: 100%;}
+
+    .caption h1{
+        font-size: 35px;
+        margin-left: 30px;
+        width: auto;
+    }
+
+    .caption hr{
+        margin-left: 30px;
+        width: auto;
+    }
+
+    .caption h3{
+        font-size: 15px;
+        margin-left: 30px;
+        width: auto;
+    }
+
+    .social-links{
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        top: 90%;
+    }
+}
+
+@media (min-width:577px){
+    .container{
+        max-width: 768px;
+    }
+
+    .col-sm-8 {width: 100%;}
+
+    .caption h1{
+        font-size: 45px;
+        margin-left: 30px;
+        width: auto;
+    }
+
+    .caption hr{
+        margin-left: 30px;
+        width: auto;
+    }
+
+    .caption h3{
+        font-size: 20px;
+        margin-left: 30px;
+        width: auto;
+    }
+}
+/*@media (max-width:576px){
     .navbar-nav{
         display: flex;
         flex-direction: row;
@@ -629,7 +684,7 @@ div .button .btn-light:hover{
 }
 
 /*medium devices (up to 767px)*/
-@media (max-width:767px){
+/*@media (max-width:767px){
     .caption h1{
         font-size: 40px;
         width: 80%;
@@ -657,7 +712,7 @@ div .button .btn-light:hover{
 }
 
 /*between medium and large devices (up to 1024px)*/
-@media (min-width:768px) and (max-width:1024px){
+/*@media (min-width:768px) and (max-width:1024px){
     .navbar{
         font-size: 20px;
     }
