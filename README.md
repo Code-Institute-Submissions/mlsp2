@@ -140,3 +140,14 @@ It is also important that there is a confirmation of my submission.
 **5. Social Media Icons:**
    1. Hover over the social media icons and verify that they change color individualy.
    2. Try to click on any social media icon and verify that it opens a new page.
+
+
+# Observations
+
+- The website has been checked for responsiveness on a multitude of screen sizes from PC to portable devices, such as tablets and mobile phones.
+
+  - As far as vertical screens all features were found to be fully responsive and fit well within each screen size.
+  - On the other hand, horizontal screens didn't respond so well and some of the features don't fit properly.
+
+- All HTML code was run through the [W3C HTML Validator](https://validator.w3.org/) and returned no errors.
+
