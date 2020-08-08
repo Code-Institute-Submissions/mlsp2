@@ -71,7 +71,6 @@ body {
 
 .caption {
   width: 100%;
-    /*position: absolute;*/
     top: 30%;
     z-index: 1;
     color: white;
@@ -84,8 +83,8 @@ body {
     display: block;
     font-family: "Varela Round", sans-serif;
     margin-bottom: 10px;
-    text-align: left;
     margin-left: 60px;
+    text-align: left;
     width: 60%;
 }
 
@@ -545,12 +544,11 @@ div .button .btn-light:hover{
     }
 }
 
-@media (min-width:577px){
+/*small screens*/
+@media (min-width:576px){
     .container{
         max-width: 768px;
     }
-
-    .col-sm-8 {width: 100%;}
 
     .caption h1{
         font-size: 45px;
@@ -566,6 +564,78 @@ div .button .btn-light:hover{
     .caption h3{
         font-size: 20px;
         margin-left: 30px;
+        width: auto;
+    }
+}
+
+/*medium screens*/
+@media (min-width:768px){
+    .container{
+        max-width: 960px;
+    }
+
+    .caption h1{
+        font-size: 55px;
+        margin-left: 30px;
+        width: auto;
+    }
+
+    .caption hr{
+        margin-left: 30px;
+        width: auto;
+    }
+
+    .caption h3{
+        font-size: 20px;
+        margin-left: 30px;
+        width: auto;
+    }
+}
+
+/*large screens*/
+@media (min-width:992px){
+    .container{
+        max-width: 1140px;
+    }
+
+    .caption h1{
+        font-size: 65px;
+        margin-left: 30px;
+        width: auto;
+    }
+
+    .caption hr{
+        margin-left: 30px;
+        width: auto;
+    }
+
+    .caption h3{
+        font-size: 20px;
+        margin-left: 30px;
+        width: auto;
+    }
+}
+
+/*extra large screens*/
+@media (min-width:1200px){
+    .container{
+        max-width: inherit;
+    }
+
+    .caption h1{
+        font-size: 65px;
+        margin-left: 60px;
+        width: auto;
+    }
+
+    .caption hr{
+        margin-left: 60px;
+        width: auto;
+    }
+
+    .caption h3{
+        font-size: 20px;
+        margin-left: 60px;
         width: auto;
     }
 }
