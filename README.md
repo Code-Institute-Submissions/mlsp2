@@ -88,3 +88,15 @@ It is also important that there is a confirmation of my submission.
 - I would also like to create a banner about new events or places that are or will be available.
 - I would also like to create a comment page so users can see how satisfied the previous users were with the company and the services provided.
 - I believe a Popup Chat Window would be a good way to make the website more efficient if the user needs more information.
+
+
+# Technologies Used
+
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+  - The project uses HTML5 to construct the pages within the application.
+- [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+  - The project uses CSS3 in order to style the HTML5 and Bootstrap elements and components.
+- [Bootstrap (ver 4.4.1)](https://getbootstrap.com/)
+  - The project uses the Bootstrap 4 grid and components in order to achieve a responsive layout and styling.
+- [Jquery (ver 3.4.1)](https://jquery.com/download/)
+  - The project uses the Jquery in order to make it much easier to use JavaScript.
