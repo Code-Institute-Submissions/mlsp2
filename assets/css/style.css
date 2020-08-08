@@ -16,7 +16,6 @@ body {
   font-family: "Gotu", sans-serif;
   letter-spacing: 2px;
   border-bottom: 1px solid;
-  /*background-color: rgba(255, 255, 255, .4)!important*/
 }
 
 .navbar-brand{
@@ -519,6 +518,17 @@ div .button .btn-light:hover{
     }
     .col-xs-4 {width: 100%;}
 
+    .navbar-nav{
+        display: flex;
+        flex-direction: row;
+        padding-top: 20px;
+        font-size:4vw;
+    } 
+
+    button:focus{
+        background-color: transparent;
+    }
+
     .caption h1{
         font-size: 35px;
         margin-left: 30px;
@@ -527,13 +537,13 @@ div .button .btn-light:hover{
 
     .caption hr{
         margin-left: 30px;
-        width: auto;
+        width: 80%;
     }
 
     .caption h3{
         font-size: 15px;
         margin-left: 30px;
-        width: auto;
+        width: 80%;
     }
 
     .social-links{
@@ -574,13 +584,22 @@ div .button .btn-light:hover{
         max-width: 960px;
     }
 
+    .navbar{
+        font-size: 20px;
+    }
+
+    .navbar-dark .navbar-brand{
+        font-size: 20px;
+    }
+
     .caption h1{
-        font-size: 55px;
+        font-size: 45px;
         margin-left: 30px;
         width: auto;
     }
 
     .caption hr{
+        border: 1px solid white;
         margin-left: 30px;
         width: auto;
     }
@@ -589,30 +608,68 @@ div .button .btn-light:hover{
         font-size: 20px;
         margin-left: 30px;
         width: auto;
+    }
+    
+    .social-links{
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        top: 90%;
+    }
+
+    .social-links li{
+        padding-right: 20px;
+    }
+
+    .social-links li a i{
+        font-size: 20px;
     }
 }
 
 /*large screens*/
-@media (min-width:992px){
+@media (min-width:992px) and (max-width:1024px){
     .container{
         max-width: 1140px;
     }
 
+    .navbar{
+        font-size: 20px;
+    }
+
+    .navbar-dark .navbar-brand{
+        font-size: 20px;
+    }
+
     .caption h1{
-        font-size: 65px;
+        font-size: 75px;
         margin-left: 30px;
         width: auto;
     }
 
     .caption hr{
+        border: 1px solid white;
         margin-left: 30px;
         width: auto;
     }
 
     .caption h3{
-        font-size: 20px;
+        font-size: 25px;
         margin-left: 30px;
         width: auto;
+    }
+    .social-links{
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        top: 90%;
+    }
+
+    .social-links li{
+        padding-right: 20px;
+    }
+
+    .social-links li a i{
+        font-size: 30px;
     }
 }
 
@@ -622,6 +679,14 @@ div .button .btn-light:hover{
         max-width: inherit;
     }
 
+    .navbar{
+        font-size: 14px;
+    }
+
+    .navbar-dark .navbar-brand{
+        font-size: 14px;
+    }
+
     .caption h1{
         font-size: 65px;
         margin-left: 60px;
@@ -637,6 +702,20 @@ div .button .btn-light:hover{
         font-size: 20px;
         margin-left: 60px;
         width: auto;
+    }
+
+    .social-links{
+    position: absolute;
+    right: 0px;
+    width: 0px;
+    margin-right: 60px;
+    top: 29%;
+    font-size: 20px;
+    z-index: 1;
+    }
+
+    .social-links li a i{
+        font-size: 15px;
     }
 }
 /*@media (max-width:576px){
