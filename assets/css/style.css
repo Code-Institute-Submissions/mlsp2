@@ -518,13 +518,6 @@ div .button .btn-light:hover{
     }
     .col-xs-4 {width: 100%;}
 
-    .navbar-nav{
-        display: flex;
-        flex-direction: row;
-        padding-top: 20px;
-        font-size:4vw;
-    } 
-
     button:focus{
         background-color: transparent;
     }
@@ -552,6 +545,37 @@ div .button .btn-light:hover{
         margin: 0 auto;
         top: 90%;
     }
+
+    .caption-about{
+        position: fixed;
+    }
+
+    h2{
+        width: auto;
+        text-align: center;
+        margin-right: 30px;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .caption-about .hr-about{
+        width: 75%;
+        margin-top: 30%;
+    }
+
+    .caption-about p{
+        width: 100%;
+        text-align: center;
+        margin-top: 30%;
+        padding: 10px;
+        margin-right: 10px;
+        font-size: 15px;
+    }
+
+    .caption-about .btn{
+        margin-right: 30%;
+        position: absolute;
+    }
 }
 
 /*small screens*/
@@ -575,6 +599,39 @@ div .button .btn-light:hover{
         font-size: 20px;
         margin-left: 30px;
         width: auto;
+    }
+
+    .caption-about{
+        position: fixed;
+    }
+
+    h2{
+        font-size: 40px;
+        width: auto;
+        text-align: right;
+        margin-right: 20px;
+        padding: 20px;
+    }
+
+    .caption-about .hr-about{
+        width: -webkit-fill-available;
+        margin-top: 30%;
+        margin-right: 40px;
+    }
+
+    .caption-about p{
+        font-size: 20px;
+        width: 90%;
+        text-align: right;
+        margin-top: 30%;
+        position: absolute;
+        padding: 20px;
+        margin-right: 20px;
+    }
+
+    .caption-about .btn{
+        margin-right: 30%;
+        position: absolute;
     }
 }
 
@@ -624,9 +681,79 @@ div .button .btn-light:hover{
     .social-links li a i{
         font-size: 20px;
     }
+
+    .caption-about{
+        position: fixed;
+    }
+
+    h2{
+        font-size: 40px;
+        width: auto;
+        text-align: right;
+        margin-right: 20px;
+        padding: 20px;
+    }
+
+    .caption-about .hr-about{
+        width: -webkit-fill-available;
+        margin-top: 20%;
+        margin-right: 40px;
+    }
+
+    .caption-about p{
+        font-size: 20px;
+        width: 90%;
+        text-align: right;
+        margin-top: 25%;
+        position: absolute;
+        padding: 20px;
+        margin-right: 20px;
+    }
+
+    .caption-about .btn{
+        margin-right: 30%;
+        position: absolute;
+    }
 }
 
 /*large screens*/
+@media (min-width:992px){
+    .container{
+        max-width: 1200px;
+    }
+    .caption-about{
+        position: fixed;
+    }
+
+    h2{
+        font-size: 50px;
+        width: 80%;
+        text-align: right;
+        margin-right: 30px;
+        padding: 20px
+    }
+
+    .caption-about .hr-about{
+        width: -webkit-fill-available;
+        margin-top: 17%;
+        margin-right: 40px;
+    }
+
+    .caption-about p{
+        font-size: 20px;
+        width: 90%;
+        text-align: right;
+        margin-top: 20%;
+        position: absolute;
+        padding: 20px;
+        margin-right: 30px;
+    }
+
+    .caption-about .btn{
+        margin-right: 30%;
+        position: absolute;
+    }
+}
 @media (min-width:992px) and (max-width:1024px){
     .container{
         max-width: 1140px;
@@ -717,11 +844,44 @@ div .button .btn-light:hover{
     .social-links li a i{
         font-size: 15px;
     }
+
+    .caption-about{
+        position: fixed;
+    }
+
+    h2{
+        font-size: 40px;
+        max-width: 60%;
+        text-align: right;
+        margin-right: 80px;
+    }
+
+    .caption-about .hr-about{
+        max-width: 60%;
+        margin-top: 12%;
+        margin-right: 6%;
+    }
+
+    .caption-about p{
+        font-size: 20px;
+        width: 60%;
+        text-align: right;
+        margin-top: 15%;
+        position: absolute;
+        padding: 20px;
+        margin-right: 60px;
+    }
+
+    .caption-about .btn{
+        margin-right: 30%;
+        position: absolute;
+        top: 50%;
+    }
 }
 
 
 
-@media (max-width:576px){
+/*@media (max-width:576px){
 
     h2{
         font-size: 20px;
@@ -802,14 +962,14 @@ div .button .btn-light:hover{
 }
 
 /*medium devices (up to 767px)*/
-@media (max-width:767px){
+/*@media (max-width:767px){
     .caption-about .btn {
     margin-top: 10%;
     }
 }
 
 /*between medium and large devices (up to 1024px)*/
-@media (min-width:768px) and (max-width:1024px){
+/*@media (min-width:768px) and (max-width:1024px){
     h2{
         font-size: 40px;
         width: 80%;
