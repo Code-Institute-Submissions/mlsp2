@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,8 +21,9 @@
 	<script src="https://kit.fontawesome.com/37ae921784.js" crossorigin="anonymous"></script>
 	<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body data-spy="scroll" data-target="#responsiveNavBar">
-    <!--Start Explore Seccion-->
+	<!--Start Explore Seccion-->
 	<div id="explore">
 
 		<!--Start Navigation-->
@@ -50,31 +52,40 @@
 		</nav>
 		<!--End Navigation-->
 
-        <!-- Start Landing Page Section -->
-            <div class="explore-img">
-                <!-- Start Map Nav Section -->
-                    <div class="map-button-container">
-                        <i class="fas fa-utensils"></i><button id="restaurants" class="map-button">restaurants</button>
-                        <i class="fas fa-coffee"></i><button id="coffeeshops" class="map-button">coffeeshops</button>
-                        <i class="fas fa-bed"></i><button id="accomodation" class="map-button">accomodation</button>
-                        <i class="fas fa-snowboarding"></i><button id="activities" class="map-button">activities</button>
-                        <i class="fas fa-tree"></i><button id="parks" class="map-button">parks</button>
-                        <i class="fas fa-glass-martini-alt"></i><button id="bars" class="map-button">bars</button>
-                        <i class="fas fa-key"></i><button id="register" class="map-button">register</button>
-                    </div>
-                <!-- End Map Nav Section -->
+		<!-- Start Landing Page Section -->
+		<div class="explore-img">
+			<div class="container">
+				
+						<!-- Start Map Nav Section -->
+						<div class="map-button-container">
+							<i class="fas fa-utensils"></i><button id="restaurants" class="map-button">restaurants</button>
+							<i class="fas fa-coffee"></i><button id="coffeeshops" class="map-button">coffeeshops</button>
+							<i class="fas fa-bed"></i><button id="accomodation" class="map-button">accomodation</button>
+							<i class="fas fa-snowboarding"></i><button id="activities" class="map-button">activities</button>
+							<i class="fas fa-tree"></i><button id="parks" class="map-button">parks</button>
+							<i class="fas fa-glass-martini-alt"></i><button id="bars" class="map-button">bars</button>
+							<i class="fas fa-key"></i><button id="register" class="map-button">register</button>
+						</div>
+						<!-- End Map Nav Section -->
 
-                <!-- Start Map Section -->
-                    <div class="map-container">
-                        <div id="map" class="map"></div>
-                    </div>
-                <!-- End Map Section -->
-            </div>
-		<!-- End Landing Page Section -->     
+						<!-- Start Map Section -->
+						<div class="map-container">
+							<div id="map" class="map"></div>
+						</div>
+						<!-- End Map Section -->
+					
+			</div>
+		</div>
+		<!-- End Landing Page Section -->
 	</div>
-    <!--End Explore Seccion-->
-    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDHHyac2SiOYPNYxXMK7rqJjnB8nCaaxE&callback=initMap"></script>
-    <script src="assets/js/googlemaps.js"></script>
+	<!--End Explore Seccion-->
+	<script
+		src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+	</script>
+	<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDHHyac2SiOYPNYxXMK7rqJjnB8nCaaxE&callback=initMap">
+	</script>
+	<script src="assets/js/googlemaps.js"></script>
 </body>
+
 </html>

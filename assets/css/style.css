@@ -518,6 +518,11 @@ div .button .btn-light:hover{
     }
     .col-xs-4 {width: 100%;}
 
+    .navbar-nav{
+        flex-direction: initial;
+        font-size: 10px;
+    }
+
     button:focus{
         background-color: transparent;
     }
@@ -576,10 +581,46 @@ div .button .btn-light:hover{
         margin-right: 30%;
         position: absolute;
     }
+
+    .map-container{
+       position: sticky;
+       top: 30%;
+    }
+
+    #map{
+        height: 70vh;
+    }
+
+    .map-button-container button{
+        padding-left: 20px;
+        position: absolute;
+        left: -1000px;
+    }
+
+    .map-button{
+        z-index: 12;
+        visibility: hidden;
+    }
+
+    .map-button-container{
+        position: sticky;
+        top: 20%;
+        text-align: center;
+    }
+
+    .map-button-container i {
+    visibility: visible;
+    border-radius: 23px;
+    padding: 5px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    background-color: #ffa083;
+    }
 }
 
 /*small screens*/
 @media (min-width:576px){
+    
     .container{
         max-width: 768px;
     }
@@ -633,6 +674,41 @@ div .button .btn-light:hover{
         margin-right: 30%;
         position: absolute;
     }
+
+    .map-container{
+       position: sticky;
+       top: 30%;
+    }
+
+    #map{
+        height: 70vh;
+    }
+
+    .map-button{
+        z-index: 12;
+        visibility: visible;
+        font-family: lato;
+        width: 200px;
+        border-style: solid;
+        background-color: #ffa083;
+        position: initial;
+        border-color: #ffa083;
+        color: white;
+        font-weight: bold;
+        border-radius: 23px;
+        letter-spacing: 1px;
+        font-size: 15px;
+        text-transform: uppercase;
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+
+    .map-button-container{
+        position: absolute;
+        top: 10%;
+        text-align: center;
+    }
+    
 }
 
 /*medium screens*/
@@ -714,6 +790,8 @@ div .button .btn-light:hover{
         margin-right: 30%;
         position: absolute;
     }
+
+    
 }
 
 /*large screens*/
@@ -877,6 +955,8 @@ div .button .btn-light:hover{
         position: absolute;
         top: 50%;
     }
+
+    
 }
 
 
