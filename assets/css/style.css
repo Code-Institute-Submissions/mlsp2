@@ -616,6 +616,16 @@ div .button .btn-light:hover{
     font-size: 15px;
     background-color: #ffa083;
     }
+
+    .caption-contact h3{
+        font-size: 27px;
+        width: 80%;
+    }
+
+    .box{
+        width: 80%;
+        bottom: 15%;
+    }
 }
 
 /*small screens*/
@@ -640,6 +650,13 @@ div .button .btn-light:hover{
         font-size: 20px;
         margin-left: 30px;
         width: auto;
+    }
+
+    .social-links{
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        top: 90%;
     }
 
     .caption-about{
@@ -674,8 +691,6 @@ div .button .btn-light:hover{
         margin-right: 30%;
         position: absolute;
     }
-
-    
 
     .map-container{
        position: sticky;
@@ -712,6 +727,15 @@ div .button .btn-light:hover{
     background-color: #ffa083;
     margin-right: 15px;
     width: 50px;
+    }
+
+    .caption-contact h3{
+        font-size: 35px;
+    }
+
+    .box{
+        width: 90%;
+        bottom: 15%;
     }
     
 }
@@ -926,6 +950,14 @@ div .button .btn-light:hover{
     font-size: 15px;
     background-color: #ffa083;
     }
+
+    .caption-contact h3{
+        font-size: 45px;
+    }
+    
+    .box{
+        width: 80%;
+    }
 }
 @media (min-width:992px) and (max-width:1024px){
     .container{
@@ -1096,6 +1128,19 @@ div .button .btn-light:hover{
 
     .map-button-container i{
         visibility: hidden;
+    }
+
+    .caption-contact h3{
+        font-size: 60px;
+        font-weight: 700;
+        width: 60%;
+    }
+
+    .box{
+    height: 300px;
+    width: 36%;
+    bottom: 7%;
+    font-size: 30px;
     }
 
     
