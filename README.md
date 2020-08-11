@@ -29,9 +29,9 @@ This website was build as a source of turism in Oslo in order to help travellers
 The website offers users the opportunity to discover the city though their services with a map which provides useful points of interest such as accomodation, restaurants, parks, activities, bars and coffee shops, and a gallery with photos from the city to motivate the users to travel.
 
 
-# Design Process XXXXXX
+# Design Process
 
-You'll be able to view the sketches, wireframes, and mockups for this project in the **Wireframes** folder, located within the **Static** folder in the  [Github project repository](https://github.com/gaspar91/mlsp2).
+You'll be able to view the sketches, wireframes, and mockups for this project in the **static** folder in the [Github project repository](https://github.com/gaspar91/mlsp2).
 
 I used [Balsamiq](https://balsamiq.com/) to build the wireframes, so you might need the program in order to view some of the documents.
 
