@@ -675,6 +675,8 @@ div .button .btn-light:hover{
         position: absolute;
     }
 
+    
+
     .map-container{
        position: sticky;
        top: 30%;
@@ -684,29 +686,32 @@ div .button .btn-light:hover{
         height: 70vh;
     }
 
+    .map-button-container button{
+        padding-left: 20px;
+        position: absolute;
+        left: -1000px;
+    }
+
     .map-button{
         z-index: 12;
-        visibility: visible;
-        font-family: lato;
-        width: 200px;
-        border-style: solid;
-        background-color: #ffa083;
-        position: initial;
-        border-color: #ffa083;
-        color: white;
-        font-weight: bold;
-        border-radius: 23px;
-        letter-spacing: 1px;
-        font-size: 15px;
-        text-transform: uppercase;
-        margin: 0px;
-        margin-bottom: 10px;
+        visibility: hidden;
     }
 
     .map-button-container{
-        position: absolute;
-        top: 10%;
+        position: sticky;
+        top: 15%;
         text-align: center;
+    }
+
+    .map-button-container i {
+    visibility: visible;
+    border-radius: 23px;
+    padding: 5px;
+    letter-spacing: 1px;
+    font-size: 25px;
+    background-color: #ffa083;
+    margin-right: 15px;
+    width: 50px;
     }
     
 }
@@ -791,6 +796,51 @@ div .button .btn-light:hover{
         position: absolute;
     }
 
+    .map-container{
+       position: sticky;
+       top: 30%;
+    }
+
+    .map-button-container button {
+    padding-left: 0px;
+    position: initial;
+    left: -1000px;
+    }
+
+    #map{
+        height: 70vh;
+    }
+
+    .map-button{
+        z-index: 12;
+        visibility: visible;
+        font-family: lato;
+        width: 150px;
+        font-weight: bold;
+        border-radius: 23px;
+        letter-spacing: 1px;
+        font-size: 10px;
+        text-transform: uppercase;
+        margin: -30px;
+        margin-bottom: 10px;
+    }
+
+    .map-button-container{
+        position: absolute;
+        top: 15%;
+        text-align: center;
+        margin-right: 30px;
+    }
+
+    .map-button-container i {
+    visibility: hidden;
+    border-radius: 23px;
+    padding: 5px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    background-color: #ffa083;
+    }
+
     
 }
 
@@ -830,6 +880,51 @@ div .button .btn-light:hover{
     .caption-about .btn{
         margin-right: 30%;
         position: absolute;
+    }
+
+    .map-container{
+       position: sticky;
+       top: 30%;
+    }
+
+    .map-button-container button {
+    padding-left: 0px;
+    position: initial;
+    left: -1000px;
+    }
+
+    #map{
+        height: 70vh;
+    }
+
+    .map-button{
+        z-index: 12;
+        visibility: visible;
+        font-family: lato;
+        width: 140px;
+        font-weight: bold;
+        border-radius: 23px;
+        letter-spacing: 1px;
+        font-size: 13px;
+        text-transform: uppercase;
+        margin: -30px;
+        margin-bottom: 10px;
+    }
+
+    .map-button-container{
+        position: absolute;
+        top: 15%;
+        text-align: center;
+        margin-right: 30px;
+    }
+
+    .map-button-container i {
+    visibility: hidden;
+    border-radius: 23px;
+    padding: 5px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    background-color: #ffa083;
     }
 }
 @media (min-width:992px) and (max-width:1024px){
@@ -954,6 +1049,53 @@ div .button .btn-light:hover{
         margin-right: 30%;
         position: absolute;
         top: 50%;
+    }
+
+    #map{
+    width: 100%;
+    height: 80vh;
+    }
+
+    .map-container{
+        width: 100%;
+        position: sticky;
+        top: 20%;
+        z-index: 1;
+        text-transform: uppercase;
+    }
+
+    .map{
+        float: left;
+        padding: 5px;
+    }
+
+    .map-button{
+        font-family: lato;
+        width: 150px;
+        border-style: solid;
+        background-color: #ffa083;
+        position: relative;
+        margin-left: 10px;
+        border-color: #ffa083;
+        color: white;
+        font-weight: bold;
+        border-radius: 23px;
+        padding: 5px;
+        letter-spacing: 1px;
+        font-size: 15px;
+        text-transform: uppercase;
+        margin: -30px
+    }
+
+    .map-button-container{
+        height: 45px;
+        padding: 5px;
+        position: absolute;
+        top: 11%;
+    }
+
+    .map-button-container i{
+        visibility: hidden;
     }
 
     
