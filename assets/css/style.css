@@ -330,7 +330,6 @@ button:focus{
     background-color: white;
     color: #ffa083;
     border-color: white;
-    margin-left: 30px;
 }
 
 .container:after {

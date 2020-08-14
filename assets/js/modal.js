@@ -1,10 +1,15 @@
+import {sendEmail} from './sendEmail.js'
+
+console.log(sendEmail);
 // Form Validation
 
-$("#submit").click(function(){
+$("#submit").click(function(event){
+    event.preventDefault();
     var name = $("#fullname").val();
     var email = $("#emailaddress").val();
     var emailPattern = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
    
+    
     if(name == '' || email == ''){
         swal({
             title: "Empty Fields!",
@@ -20,7 +25,7 @@ $("#submit").click(function(){
             icon: "warning",
             button: "Ok, thank you",
         }); 
-        event.preventDefault();
+        
     }
     else{
         swal({
@@ -29,12 +34,12 @@ $("#submit").click(function(){
             icon: "success",
             button: "Awesome!",
         });
-
-         window.setTimeout(() => {
-            document.createElement('form').submit.call(document.forms['testform'])
-            }, 2500);
+        sendEmail(name,email)
+        // window.setTimeout(() => {
+            //document.createElement('form').submit.call(document.forms['testform'])
+           // }, 2500);
             
-        $('#testForm').submit(); 
+        //$('#testForm').submit(); 
     };
 });
 

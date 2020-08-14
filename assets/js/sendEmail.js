@@ -1,19 +1,19 @@
 //Getting the button from the DOM
-let submitButton = document.getElementById('button') 
+//let submitButton = document.getElementById('button') 
 
 //Add event listener on click to the button - notice i added the event as argument to the function
-submit.addEventListener('click', function(event){
+export const sendEmail = (name,email) => {
 
     //prevent the reload of the page. here i prevent the event.
-    event.preventDefault()
+   // event.preventDefault()
 
     //Getting the name and email from the DOM
-    let fullName = document.getElementById('fullname').value
-    let email = document.getElementById('emailaddress').value
+    //let fullName = document.getElementById('fullname').value
+    //let email = document.getElementById('emailaddress').value
 
     //Sending the email with the name and email
     emailjs.send("gmail", "yourjourney", {
-        "from_name": fullName,
+        "from_name": name,
         "from_email": email,
     })
         .then(
@@ -27,4 +27,6 @@ submit.addEventListener('click', function(event){
             }
 
         );
-})
+};
+
+//module.exports = sendEmail
