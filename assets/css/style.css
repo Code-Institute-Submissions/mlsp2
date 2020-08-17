@@ -321,8 +321,8 @@ h2 {
 .map-button-container{
     height: 45px;
     padding: 5px;
-    position: absolute;
-    top: 11%;
+    position: relative;
+    top: 25px;
 }
 
 .map-button-container i{
@@ -927,11 +927,13 @@ div .button .btn-light:hover{
         margin-bottom: 10px;
     }
 
+    
+
     .map-button-container{
-        position: absolute;
-        top: 15%;
-        text-align: center;
-        margin-right: 30px;
+        height: 45px;
+        padding: 5px;
+        position: relative;
+        top: 25px;
     }
 
     .map-button-container i {
@@ -994,6 +996,13 @@ div .button .btn-light:hover{
 
     .social-links li a i{
         font-size: 30px;
+    }
+
+    .map-button-container{
+        height: 45px;
+        padding: 5px;
+        position: relative;
+        top: 25px;
     }
 }
 
@@ -1114,8 +1123,8 @@ div .button .btn-light:hover{
     .map-button-container{
         height: 45px;
         padding: 5px;
-        position: absolute;
-        top: 11%;
+        position: relative;
+        top: 25px;
     }
 
     .map-button-container i{

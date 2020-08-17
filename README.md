@@ -124,7 +124,7 @@ It is also important that there is a confirmation of my submission.
    5. Try to click on the pop-up window and verify that it opens the webpage of the location in a new window.
    8. Try to close the pop-up window on the "X" and verify that it closes.
    9. Try to click on another button and verify that the markers from the previous button are now replaced by the markers of the new one.
-   10. Try to click the last button, "register", and verify that it leads you to the "Contact" page.
+   10. Open the map on small devices and confirm that the buttons are now presented as icons.
 
 **4. Contact form:**
 
