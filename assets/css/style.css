@@ -256,7 +256,7 @@ h2 {
 /* ----------------------------------------------- Explore Page Start --- */
 .explore-img {
   height: 100vh;
-  background: bisque;
+  background: white;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -266,6 +266,10 @@ h2 {
   align-items: center;
   justify-content: center;
   position: relative;
+}
+
+#explore nav{
+    background: rgba(0, 0, 0, 0.5);
 }
 
 #map{
