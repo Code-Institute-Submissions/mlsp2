@@ -1,6 +1,6 @@
 import {sendEmail} from './sendEmail.js'
 
-console.log(sendEmail);
+
 // Form Validation
 
 $("#submit").click(function(event){

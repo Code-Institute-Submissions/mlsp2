@@ -7,11 +7,21 @@ export const sendEmail = (name,email) => {
     })
         .then(
             function (response) {
-                console.log("SUCCESS", response);
+                swal({
+                    title: "Good job!",
+                    text: "You're subscriptions has been registered",
+                    icon: "success",
+                    button: "Awesome!",
+                });
                 
             },
             function (error) {
-                console.log("FAILED", error);
+                swal({
+                    title: "Error!",
+                    text: "Please check fields",
+                    icon: "warning",
+                    button: "Ok, thank you",
+                }); 
                 
             }
 
